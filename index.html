@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biblical Mindset - Home</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
   <!-- Header -->
@@ -30,13 +31,39 @@
   <!-- Main Content -->
   <main>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero animate__animated animate__fadeIn">
       <h1>Welcome to Biblical Mindset</h1>
       <p>Transform your thinking with biblical wisdom.</p>
     </section>
 
+    <!-- Way, Truth, and Life Section -->
+    <section class="way-truth-life">
+      <div class="container">
+        <!-- Way -->
+        <div class="card animate__animated animate__fadeInLeft">
+          <div class="icon">🛤️</div>
+          <h2>The Way</h2>
+          <p>Jesus said, "I am the way, the truth, and the life. No one comes to the Father except through me." (John 14:6)</p>
+        </div>
+
+        <!-- Truth -->
+        <div class="card animate__animated animate__fadeInUp">
+          <div class="icon">📖</div>
+          <h2>The Truth</h2>
+          <p>Discover the unchanging truth of God's Word that sets us free. (John 8:32)</p>
+        </div>
+
+        <!-- Life -->
+        <div class="card animate__animated animate__fadeInRight">
+          <div class="icon">🌿</div>
+          <h2>The Life</h2>
+          <p>Experience the abundant life that Jesus promises to those who follow Him. (John 10:10)</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Bible Verses Section -->
-    <section class="bible-verses">
+    <section class="bible-verses animate__animated animate__fadeIn">
       <h2>Daily Bible Verses</h2>
       <div class="verse-container">
         <div class="verse-card">
@@ -53,25 +80,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Prayer Request Section -->
-    <section class="prayer-request">
-      <h2>Submit a Prayer Request</h2>
-      <p>We are here to pray for you. Share your prayer request, and our team will lift it up in prayer.</p>
-      <form id="prayer-form">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-        <label for="request">Your Prayer Request:</label>
-        <textarea id="request" name="request" rows="5" placeholder="Type your prayer request here..." required></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-      <p class="prayer-note">Your request will be kept confidential and prayed over by our team.</p>
-    </section>
   </main>
 
   <!-- Footer -->
@@ -81,25 +89,5 @@
 
   <!-- JavaScript -->
   <script src="js/script.js"></script>
-  <script>
-    // Handle Prayer Request Form Submission
-    document.getElementById('prayer-form').addEventListener('submit', function (e) {
-      e.preventDefault(); // Prevent form submission
-
-      // Get form data
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const request = document.getElementById('request').value;
-
-      // Simulate sending data to a server (for demonstration purposes)
-      console.log('Prayer Request Submitted:', { name, email, request });
-
-      // Show a confirmation message
-      alert('Thank you for submitting your prayer request. We will pray for you!');
-
-      // Clear the form
-      document.getElementById('prayer-form').reset();
-    });
-  </script>
 </body>
-  </html>
+    </html>
