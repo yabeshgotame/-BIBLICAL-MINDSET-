@@ -15,6 +15,15 @@ const blogs = [
     keywords: ["hope", "difficult times", "trust", "God's plan"],
     verses: ["Romans 15:13", "Jeremiah 29:11"]
   }
+  // Remove or comment out the "faith" blog since it doesn't exist yet
+  // {
+  //   title: "Faith: Believing in the Unseen",
+  //   image: "images/faith.png",
+  //   date: "March 30, 2025",
+  //   link: "blogs/faith.html",
+  //   keywords: ["faith", "belief", "trust", "God's promises"],
+  //   verses: ["Hebrews 11:1", "2 Corinthians 5:7"]
+  // }
 ];
 
 const blogContainer = document.getElementById('blog-container');
