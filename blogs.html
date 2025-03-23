@@ -1,59 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs - Biblical Mindset</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/blogs.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="search-icon" id="search-icon">
-      <img src="images/search.png" alt="Search">
-    </div>
-    <div class="logo-center">
-      <img src="images/logo.png" alt="Biblical Mindset Logo">
-    </div>
-    <nav>
-      <div class="hamburger" id="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Search Bar -->
-  <div class="search-bar" id="search-bar">
-    <input type="text" id="search-input" placeholder="Search blogs by keyword or Bible verse...">
-    <button id="search-button">Search</button>
+<!-- Header -->
+<header>
+  <div class="search-icon" id="search-icon">
+    <img src="images/search.png" alt="Search">
   </div>
+  <div class="logo-center">
+    <img src="images/logo.png" alt="Biblical Mindset Logo" class="blog-logo">
+  </div>
+  <nav>
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- Main Content -->
-  <main>
-    <section class="blog-listing">
-      <h1>Blogs</h1>
-      <div id="blog-container" class="blog-grid">
-        <!-- Blogs will be dynamically loaded here -->
-      </div>
-    </section>
-  </main>
+<!-- Search Bar -->
+<div class="search-bar" id="search-bar">
+  <input type="text" id="search-input" placeholder="Search blogs by keyword or Bible verse...">
+  <button id="search-button">Search</button>
+</div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025. All rights reserved. Created by team Yabesh.</p>
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="js/blogs.js"></script>
-  <script src="js/script.js"></script>
-</body>
-</html>
+<!-- Blog Container -->
+<div id="blog-container" class="blog-grid">
+  <!-- Blogs will be dynamically loaded here -->
+</div>
