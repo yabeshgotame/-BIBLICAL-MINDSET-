@@ -1,12 +1,28 @@
-/* Blog Listing Page Styles */
-.blog-listing {
-  padding: 1rem;
+/* Search Icon Styles */
+.search-icon {
+  cursor: pointer;
+  padding: 0.5rem;
 }
 
+.search-icon-img {
+  width: 24px; /* Perfect size for search icon */
+  height: 24px; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.search-icon-img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Search Bar Styles */
 .search-bar {
   display: none;
   margin-bottom: 1rem;
   text-align: center;
+  padding: 1rem;
+  background: var(--accent-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 .search-bar.active {
@@ -38,81 +54,3 @@
   background-color: var(--accent-color);
   color: var(--primary-color);
 }
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.blog-card {
-  background: var(--accent-color);
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 4px 6px var(--shadow-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px var(--shadow-color);
-}
-
-.blog-card img {
-  width: 100%;
-  height: 150px; /* Adjusted for mobile */
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.blog-card h2 {
-  font-size: 1.25rem;
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-}
-
-.blog-card p {
-  font-size: 0.9rem;
-  color: var(--text-color);
-  margin-bottom: 1rem;
-}
-
-.blog-card a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.blog-card a:hover {
-  background-color: var(--accent-color);
-  color: var(--primary-color);
-}
-
-.search-icon-img {
-  width: 24px; /* Best size for search icon */
-  height: 24px;
-  cursor: pointer;
-}
-
-.logo-center img {
-  width: 100px; /* Adjusted logo size */
-  height: auto;
-}
-
-.no-results {
-  text-align: center;
-  padding: 1rem;
-  background: var(--accent-color);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px var(--shadow-color);
-}
-
-.no-results p {
-  font-size: 1rem;
-  color: var(--text-color);
-  }
