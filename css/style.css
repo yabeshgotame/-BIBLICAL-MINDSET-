@@ -1,14 +1,15 @@
 :root {
-  --primary-color: #ff6f61; /* Reddish */
-  --secondary-color: #ffcc00; /* Yellowish */
-  --text-color: #333; /* Dark text for contrast */
-  --accent-color: #ff3b3f; /* Darker red for accents */
-  --shadow-color: rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  --primary-color: #1a1f2e; /* Navy Blue */
+  --secondary-color: #d4af37; /* Gold */
+  --accent-color: #f4f4f4; /* Soft White */
+  --text-color: #333; /* Dark Gray */
+  --background-gradient: linear-gradient(135deg, #1a1f2e, #2c3e50); /* Navy to Light Blue */
+  --shadow-color: rgba(0, 0, 0, 0.2); /* Subtle Shadow */
 }
 
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: var(--background-gradient);
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -20,7 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: var(--primary-color);
   box-shadow: 0 4px 6px var(--shadow-color);
 }
 
@@ -40,14 +41,14 @@ nav ul {
 }
 
 nav ul li a {
-  color: var(--text-color);
+  color: var(--accent-color);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .hamburger {
@@ -59,7 +60,7 @@ nav ul li a:hover {
 .hamburger .line {
   width: 25px;
   height: 3px;
-  background-color: var(--text-color);
+  background-color: var(--accent-color);
   margin: 4px 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -97,7 +98,8 @@ main {
 footer {
   text-align: center;
   padding: 1rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: var(--primary-color);
+  color: var(--accent-color);
   margin-top: 2rem;
   font-size: 0.9rem;
   box-shadow: 0 -4px 6px var(--shadow-color);
@@ -113,7 +115,7 @@ footer {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: var(--primary-color);
   }
 
   .nav-links.active {
