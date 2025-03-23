@@ -1,0 +1,83 @@
+/* Homepage Styles */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1a1f2e, #0a0f1d);
+  color: var(--text-color);
+  border-radius: 10px;
+  margin: 2rem;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 0.8rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-color);
+}
+
+.bible-verse {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin: 2rem;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.bible-verse h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+#verse-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+#verse-reference {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+}
+
+.prayer-request {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin: 2rem;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.prayer-request h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.prayer-request p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
