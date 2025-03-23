@@ -228,4 +228,23 @@ nav ul li a:hover {
   .verse-card {
     width: 100%;
   }
-    }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  }
