@@ -1,3 +1,4 @@
+// Array of blogs
 const blogs = [
   {
     title: "The Parables of Jesus: Timeless Lessons for Today",
@@ -6,53 +7,19 @@ const blogs = [
     link: "blogs/parable.html",
     keywords: ["parable", "Jesus", "sower", "prodigal son", "good samaritan"],
     verses: ["Matthew 13:1-23", "Luke 15:11-32", "Luke 10:25-37"]
-  },
-  {
-    title: "The Power of Prayer: Connecting with God",
-    image: "images/prayer.png",
-    date: "March 25, 2025",
-    link: "blogs/prayer.html",
-    keywords: ["prayer", "faith", "God", "spiritual growth"],
-    verses: ["Matthew 6:9-13", "Philippians 4:6-7"]
-  },
-  {
-    title: "The Fruit of the Spirit: Living a Christ-Centered Life",
-    image: "images/fruit-spirit.png",
-    date: "March 30, 2025",
-    link: "blogs/fruit-spirit.html",
-    keywords: ["fruit", "spirit", "love", "joy", "peace"],
-    verses: ["Galatians 5:22-23"]
   }
 ];
 
+// DOM Elements
 const blogContainer = document.getElementById('blog-container');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 const searchIcon = document.getElementById('search-icon');
 const searchBar = document.getElementById('search-bar');
 
-// Display all blogs initially
-displayBlogs(blogs);
-
-// Search functionality
-searchButton.addEventListener('click', () => {
-  const searchTerm = searchInput.value.toLowerCase();
-  const filteredBlogs = blogs.filter(blog => 
-    blog.title.toLowerCase().includes(searchTerm) ||
-    blog.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm)) ||
-    blog.verses.some(verse => verse.toLowerCase().includes(searchTerm))
-  );
-  displayBlogs(filteredBlogs);
-});
-
-// Toggle search bar on search icon click
-searchIcon.addEventListener('click', () => {
-  searchBar.classList.toggle('active');
-});
-
-// Display blogs function
+// Function to display blogs
 function displayBlogs(filteredBlogs) {
-  blogContainer.innerHTML = '';
+  blogContainer.innerHTML = ''; // Clear existing blogs
   if (filteredBlogs.length === 0) {
     blogContainer.innerHTML = `
       <div class="no-results">
@@ -72,4 +39,30 @@ function displayBlogs(filteredBlogs) {
       blogContainer.appendChild(blogCard);
     });
   }
-    }
+}
+
+// Initial display of all blogs
+displayBlogs(blogs);
+
+// Search functionality
+searchButton.addEventListener('click', () => {
+  const searchTerm = searchInput.value.toLowerCase();
+  const filteredBlogs = blogs.filter(blog => 
+    blog.title.toLowerCase().includes(searchTerm) ||
+    blog.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm)) ||
+    blog.verses.some(verse => verse.toLowerCase().includes(searchTerm))
+  );
+  displayBlogs(filteredBlogs);
+});
+
+// Allow pressing "Enter" to search
+searchInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    searchButton.click();
+  }
+});
+
+// Toggle search bar on search icon click
+searchIcon.addEventListener('click', () => {
+  searchBar.classList.toggle('active');
+});
