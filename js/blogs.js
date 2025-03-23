@@ -7,7 +7,6 @@ const blogs = [
     keywords: ["parable", "Jesus", "sower", "prodigal son", "good samaritan"],
     verses: ["Matthew 13:1-23", "Luke 15:11-32", "Luke 10:25-37"]
   }
-  // Removed "Finding Hope in Difficult Times"
 ];
 
 const blogContainer = document.getElementById('blog-container');
