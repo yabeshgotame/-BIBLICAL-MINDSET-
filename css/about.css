@@ -1,16 +1,15 @@
-/* About Page Styles */
 .about {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: var(--secondary-color);
+  background: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 .about h1 {
   font-size: 2.5rem;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin-bottom: 1rem;
   text-align: center;
 }
