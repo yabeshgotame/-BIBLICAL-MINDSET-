@@ -1,108 +1,150 @@
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #4fc3f7, #3fb0e0);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Way, Truth, and Life Section */
+.way-truth-life {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.way-truth-life .container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.way-truth-life .card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.way-truth-life .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.way-truth-life .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.way-truth-life h2 {
+  font-size: 1.8rem;
+  color: #4fc3f7;
+  margin-bottom: 1rem;
+}
+
+.way-truth-life p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
 /* Bible Verses Section */
 .bible-verses {
-  padding: 2rem;
-  background-color: var(--secondary-color);
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #3fb0e0, #4fc3f7);
+  color: white;
   text-align: center;
 }
 
 .bible-verses h2 {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .verse-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .verse-card {
-  background-color: var(--secondary-color);
-  border: 1px solid var(--primary-color);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 1.5rem;
-  max-width: 300px;
-  box-shadow: 0 4px 6px var(--shadow-color);
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .verse-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px var(--shadow-color);
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .verse-text {
   font-size: 1.1rem;
-  color: var(--text-color);
   margin-bottom: 1rem;
 }
 
 .verse-reference {
   font-size: 0.9rem;
-  color: var(--primary-color);
   font-style: italic;
 }
 
-/* Prayer Request Section */
-.prayer-request {
-  padding: 2rem;
-  background-color: var(--secondary-color);
-  text-align: center;
-}
-
-.prayer-request h2 {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.prayer-request p {
-  font-size: 1.1rem;
-  color: var(--text-color);
-  margin-bottom: 1.5rem;
-}
-
-.prayer-request form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.prayer-request label {
-  font-size: 1.1rem;
-  color: var(--text-color);
-  text-align: left;
-}
-
-.prayer-request input,
-.prayer-request textarea {
-  padding: 0.5rem;
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-}
-
-.prayer-request button {
-  padding: 0.5rem 1rem;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.prayer-request button:hover {
-  background-color: var(--accent-color);
-}
-
-.prayer-note {
-  font-size: 0.9rem;
-  color: var(--text-color);
-  margin-top: 1rem;
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .way-truth-life .card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .verse-card {
+    width: 100%;
+  }
+}
