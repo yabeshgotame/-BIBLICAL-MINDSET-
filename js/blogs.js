@@ -1,4 +1,3 @@
-// Array of blogs
 const blogs = [
   {
     title: "The Parables of Jesus: Timeless Lessons for Today",
@@ -10,7 +9,6 @@ const blogs = [
   }
 ];
 
-// DOM Elements
 const blogContainer = document.getElementById('blog-container');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
