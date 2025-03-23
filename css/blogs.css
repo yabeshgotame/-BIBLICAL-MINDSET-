@@ -15,8 +15,8 @@
 
 .search-bar input {
   padding: 0.5rem;
-  width: 80%; /* Adjusted for mobile */
-  max-width: 300px; /* Limits width on larger screens */
+  width: 80%;
+  max-width: 300px;
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
   background-color: var(--accent-color);
@@ -42,7 +42,7 @@
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .blog-card {
@@ -61,13 +61,13 @@
 .blog-card img {
   width: 100%;
   height: 150px; /* Adjusted for mobile */
-  object-fit: cover; /* Ensures images are not stretched */
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
 
 .blog-card h2 {
-  font-size: 1.25rem; /* Adjusted for mobile */
+  font-size: 1.25rem;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
@@ -91,4 +91,28 @@
 .blog-card a:hover {
   background-color: var(--accent-color);
   color: var(--primary-color);
+}
+
+.search-icon-img {
+  width: 24px; /* Best size for search icon */
+  height: 24px;
+  cursor: pointer;
+}
+
+.logo-center img {
+  width: 100px; /* Adjusted logo size */
+  height: auto;
+}
+
+.no-results {
+  text-align: center;
+  padding: 1rem;
+  background: var(--accent-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.no-results p {
+  font-size: 1rem;
+  color: var(--text-color);
   }
