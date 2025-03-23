@@ -10,7 +10,7 @@ const blogs = [
   {
     title: "The Power of Prayer: Connecting with God",
     image: "images/prayer.png",
-    date: "March 18, 2025",
+    date: "March 25, 2025",
     link: "blogs/prayer.html",
     keywords: ["prayer", "faith", "God", "spiritual growth"],
     verses: ["Matthew 6:9-13", "Philippians 4:6-7"]
@@ -64,4 +64,4 @@ function displayBlogs(filteredBlogs) {
       blogContainer.appendChild(blogCard);
     });
   }
-                       }
+}
