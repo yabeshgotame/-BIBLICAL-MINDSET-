@@ -1,10 +1,11 @@
+/* Blog Listing Page Styles */
 .blog-listing {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .search-bar {
   display: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -14,7 +15,8 @@
 
 .search-bar input {
   padding: 0.5rem;
-  width: 300px;
+  width: 80%; /* Adjusted for mobile */
+  max-width: 300px; /* Limits width on larger screens */
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
   background-color: var(--accent-color);
@@ -39,14 +41,14 @@
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
 .blog-card {
   background: var(--accent-color);
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 0 4px 6px var(--shadow-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -58,12 +60,14 @@
 
 .blog-card img {
   width: 100%;
+  height: 150px; /* Adjusted for mobile */
+  object-fit: cover; /* Ensures images are not stretched */
   border-radius: 10px;
   margin-bottom: 1rem;
 }
 
 .blog-card h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem; /* Adjusted for mobile */
   color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
