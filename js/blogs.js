@@ -14,6 +14,14 @@ const blogs = [
     link: "blogs/prayer.html",
     keywords: ["prayer", "faith", "God", "spiritual growth"],
     verses: ["Matthew 6:9-13", "Philippians 4:6-7"]
+  },
+  {
+    title: "The Fruit of the Spirit: Living a Christ-Centered Life",
+    image: "images/fruit-spirit.png",
+    date: "March 30, 2025",
+    link: "blogs/fruit-spirit.html",
+    keywords: ["fruit", "spirit", "love", "joy", "peace"],
+    verses: ["Galatians 5:22-23"]
   }
 ];
 
@@ -64,4 +72,4 @@ function displayBlogs(filteredBlogs) {
       blogContainer.appendChild(blogCard);
     });
   }
-}
+    }
