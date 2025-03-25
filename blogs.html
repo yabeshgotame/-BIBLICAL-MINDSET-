@@ -3,63 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Blogs - Biblical Mindset">
-  <meta property="og:description" content="Explore insightful blogs on biblical wisdom and teachings.">
+  <!-- Social Sharing Tags -->
+  <meta property="og:title" content="Biblical Mindset Blog">
+  <meta property="og:description" content="Explore our biblical teachings">
   <meta property="og:image" content="https://yabeshgotame.github.io/biblical-mindset/images/web.png">
   <meta property="og:url" content="https://yabeshgotame.github.io/biblical-mindset/blogs.html">
   <meta property="og:type" content="website">
-  <title>Blogs - Biblical Mindset</title>
+  
+  <title>Blog - Biblical Mindset</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/blogs.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <div class="search-icon" id="search-icon">
-      <img src="images/search.png" alt="Search" class="search-icon-img">
-    </div>
-    <div class="logo-center">
-      <img src="images/logo.png" alt="Biblical Mindset Logo">
+    <div class="logo">
+      <img src="images/logo.png" alt="Biblical Mindset Logo" width="150">
     </div>
     <nav>
       <div class="hamburger" id="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
       </div>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="blogs.html">Blogs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Search Bar -->
-  <div class="search-bar" id="search-bar">
-    <input type="text" id="search-input" placeholder="Search blogs by keyword or Bible verse...">
-    <button id="search-button">Search</button>
-  </div>
-
-  <!-- Main Content -->
   <main>
     <section class="blog-listing">
-      <h1>Blogs</h1>
-      <div id="blog-container" class="blog-grid">
-        <!-- Blogs will be dynamically loaded here -->
+      <h1>Latest Articles</h1>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <img src="images/parable.png" alt="Parables of Jesus">
+          <h2>The Parables of Jesus</h2>
+          <a href="blogs/parable.html">Read More</a>
+        </article>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025. All rights reserved. Created by team Yabesh.</p>
+    <p>&copy; 2025 Biblical Mindset</p>
+    <div class="social-share">
+      <button class="facebook-share">Share on Facebook</button>
+      <button class="twitter-share">Share on Twitter</button>
+    </div>
   </footer>
 
-  <!-- JavaScript -->
-  <script src="js/blogs.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/blogs.js"></script>
 </body>
-  </html>
+</html>
