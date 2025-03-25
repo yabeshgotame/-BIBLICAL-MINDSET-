@@ -1,20 +1,34 @@
-// Hamburger Menu Toggle
+// Mobile Menu Toggle
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
 if (hamburger && navLinks) {
   hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('show');
   });
 }
 
-// Search Bar Toggle (for Blogs Page)
-const searchIcon = document.getElementById('search-icon');
-const searchBar = document.getElementById('search-bar');
-
-if (searchIcon && searchBar) {
-  searchIcon.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
+// Social Sharing Functionality
+function setupSocialSharing() {
+  const currentUrl = encodeURIComponent(window.location.href);
+  const title = encodeURIComponent(document.title);
+  
+  // Facebook Share
+  document.querySelectorAll('.facebook-share').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`, '_blank');
+    });
+  });
+  
+  // Twitter Share
+  document.querySelectorAll('.twitter-share').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.open(`https://twitter.com/intent/tweet?url=${currentUrl}&text=${title}`, '_blank');
+    });
   });
 }
+
+// Initialize when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  setupSocialSharing();
+});
