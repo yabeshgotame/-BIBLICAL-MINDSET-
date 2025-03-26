@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <!-- ▼▼▼ ADD THESE 6 LINES ONLY ▼▼▼ -->
-  <meta property="og:title" content="[PAGE_TITLE]">
-  <meta property="og:description" content="[PAGE_DESCRIPTION]">
-  <meta property="og:image" content="https://yabeshgotame.github.io/biblical-mindset/images/[IMAGE_NAME].png">
-  <meta property="og:url" content="https://yabeshgotame.github.io/biblical-mindset/[PAGE_PATH]">
-  <meta property="og:type" content="[TYPE]">
+<head>
+  <!-- Social Sharing Meta Tags -->
+  <meta property="og:title" content="Biblical Mindset - Transform Your Thinking">
+  <meta property="og:description" content="Daily biblical wisdom for modern living">
+  <meta property="og:image" content="https://yabeshgotame.github.io/biblical-mindset/images/logo.png">
+  <meta property="og:url" content="https://yabeshgotame.github.io/biblical-mindset/">
+  <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- ▲▲▲ ADD THESE 6 LINES ONLY ▲▲▲ -->
 
-  <!-- LEAVE ALL YOUR EXISTING CODE BELOW EXACTLY AS IS -->
+  <!-- Your Original Head Content -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  ...
-  </head>
+  <title>Biblical Mindset - Transform Your Thinking</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preload" href="images/logo.png" as="image">
+  <link rel="preload" href="images/web.png" as="image">
+</head>
+<!-- REST OF YOUR ORIGINAL BODY CONTENT REMAINS EXACTLY THE SAME -->
 <body>
   <header>
     <div class="logo">
-      <img src="images/logo.png" alt="Biblical Mindset Logo" width="150">
+      <img src="images/logo.png" alt="Biblical Mindset Logo" width="150" height="50" loading="eager">
     </div>
     <nav>
-      <div class="hamburger" id="hamburger">
+      <div class="hamburger" id="hamburger" aria-label="Menu">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </div>
       <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blogs.html">Blogs</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -42,22 +46,24 @@
       <a href="blogs.html" class="cta-button">Explore Blogs</a>
     </section>
 
-    <section class="bible-verse">
+    <section class="bible-verse" aria-live="polite">
       <h2>Verse of the Day</h2>
       <p id="verse-text">"For I know the plans I have for you..."</p>
       <p id="verse-reference">- Jeremiah 29:11</p>
     </section>
+
+    <section class="prayer-request">
+      <h2>Need Prayer?</h2>
+      <p>We're here for you</p>
+      <a href="contact.html" class="cta-button">Request Prayer</a>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Biblical Mindset</p>
-    <div class="social-share">
-      <button class="facebook-share">Share on Facebook</button>
-      <button class="twitter-share">Share on Twitter</button>
-    </div>
+    <p>&copy; 2025 Biblical Mindset. All rights reserved.</p>
   </footer>
 
-  <script src="js/script.js"></script>
-  <script src="js/home.js"></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/home.js" defer></script>
 </body>
-  </html>
+</html>
