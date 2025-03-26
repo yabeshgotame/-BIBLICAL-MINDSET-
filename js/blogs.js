@@ -15,9 +15,8 @@ const searchButton = document.getElementById('search-button');
 const searchIcon = document.getElementById('search-icon');
 const searchBar = document.getElementById('search-bar');
 
-// Function to display blogs
 function displayBlogs(filteredBlogs) {
-  blogContainer.innerHTML = ''; // Clear existing blogs
+  blogContainer.innerHTML = '';
   if (filteredBlogs.length === 0) {
     blogContainer.innerHTML = `
       <div class="no-results">
@@ -39,7 +38,7 @@ function displayBlogs(filteredBlogs) {
   }
 }
 
-// Initial display of all blogs
+// Initial display
 displayBlogs(blogs);
 
 // Search functionality
@@ -53,14 +52,14 @@ searchButton.addEventListener('click', () => {
   displayBlogs(filteredBlogs);
 });
 
-// Allow pressing "Enter" to search
+// Enter key support
 searchInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     searchButton.click();
   }
 });
 
-// Toggle search bar on search icon click
+// Toggle search bar
 searchIcon.addEventListener('click', () => {
   searchBar.classList.toggle('active');
 });
