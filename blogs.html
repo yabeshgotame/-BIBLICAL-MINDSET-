@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Social Meta Tags -->
-  <meta property="og:title" content="Biblical Teachings - Biblical Mindset">
-  <meta property="og:description" content="Explore our collection of biblical teachings and articles">
-  <meta property="og:image" content="https://yabeshgotame.github.io/biblical-mindset/images/web.png">
+  <!-- Social Sharing Meta Tags -->
+  <meta property="og:title" content="Biblical Teachings - Blog">
+  <meta property="og:description" content="Explore our biblical articles">
+  <meta property="og:image" content="https://yabeshgotame.github.io/biblical-mindset/images/blog.png">
   <meta property="og:url" content="https://yabeshgotame.github.io/biblical-mindset/blogs.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
-  <title>Biblical Teachings - Biblical Mindset</title>
+  <!-- Your Original Head Content -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs - Biblical Mindset</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/blogs.css">
 </head>
+<!-- REST OF YOUR ORIGINAL BODY CONTENT REMAINS EXACTLY THE SAME -->
+
 <body>
   <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Biblical Mindset Logo" width="150">
+    <div class="search-icon" id="search-icon">
+      <img src="images/search.png" alt="Search" class="search-icon-img">
+    </div>
+    <div class="logo-center">
+      <img src="images/logo.png" alt="Biblical Mindset Logo">
     </div>
     <nav>
       <div class="hamburger" id="hamburger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="blogs.html">Blogs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <div class="search-bar" id="search-bar">
+    <input type="text" id="search-input" placeholder="Search blogs by keyword or Bible verse...">
+    <button id="search-button">Search</button>
+  </div>
+
   <main>
     <section class="blog-listing">
-      <h1>Biblical Teachings</h1>
-      <div class="blog-grid">
-        <article class="blog-card">
-          <img src="images/parable.png" alt="Parables of Jesus">
-          <h2>The Parables of Jesus: Timeless Lessons for Today</h2>
-          <p>Explore the timeless lessons from the parables of Jesus</p>
-          <a href="blogs/parable.html">Read More</a>
-        </article>
+      <h1>Blogs</h1>
+      <div id="blog-container" class="blog-grid">
+        <!-- Blogs will be dynamically loaded here -->
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Biblical Mindset</p>
-    <div class="social-share">
-      <button class="facebook-share">Share on Facebook</button>
-      <button class="twitter-share">Share on Twitter</button>
-    </div>
+    <p>&copy; 2025. All rights reserved. Created by team Yabesh.</p>
   </footer>
 
+  <script src="js/blogs.js"></script>
   <script src="js/script.js"></script>
 </body>
-  </html>
+</html>
