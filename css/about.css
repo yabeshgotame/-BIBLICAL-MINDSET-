@@ -1,89 +1,206 @@
-/* about.css - Additional styles for About, Refer, and Prayer pages */
+/* about.css - Enhanced visual styling */
 
-/* Page Hero Styles */
-.page-title {
-    font-size: 2.8rem;
-    color: var(--primary);
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-family: 'Merriweather', serif;
+/* About Page Container */
+.about-container {
+    padding: 3rem 0;
 }
 
-/* Refer Page Specific */
-.refer-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-    margin-top: 3rem;
-}
-
-.benefits ul, .guidelines ol {
-    margin: 1.5rem 0;
-    padding-left: 1.5rem;
-}
-
-.benefits li, .guidelines li {
-    margin-bottom: 0.8rem;
-    line-height: 1.6;
-}
-
-.action-card {
-    background: var(--light);
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.action-card i {
-    font-size: 3rem;
-    color: var(--secondary);
-    margin-bottom: 1rem;
-}
-
-/* Prayer Page Specific */
-.prayer-intro {
+.about-header {
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.prayer-intro h2 {
+.about-header h1 {
+    font-size: 2.8rem;
     color: var(--primary);
+    margin-bottom: 1.5rem;
 }
 
-.prayer-form-container {
-    max-width: 800px;
+.verse-box {
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid var(--accent);
+    padding: 1.5rem;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-.prayer-form textarea {
-    min-height: 200px;
+.verse-box i {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
-.prayer-promise {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background: rgba(52, 152, 219, 0.1);
-    border-left: 4px solid var(--accent);
+.verse-box p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
 }
 
-.checkbox-group {
+.verse-ref {
+    font-weight: 600;
+    text-align: right;
+}
+
+/* About Cards */
+.about-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.icon-container {
+    width: 60px;
+    height: 60px;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    margin: 1rem 0;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
 }
 
-.checkbox-group input {
+.feature-list {
+    margin-top: 1.5rem;
+}
+
+.feature-list li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list i {
+    color: var(--accent);
     margin-right: 10px;
+}
+
+/* Beliefs Grid */
+.beliefs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.belief-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(231, 76, 60, 0.05);
+    border-radius: 8px;
+}
+
+.belief-item h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.belief-item i {
+    margin-right: 8px;
+    color: var(--accent);
+}
+
+/* Refer Page Styles */
+.refer-container {
+    padding: 3rem 0;
+}
+
+.refer-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.card-header i {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    color: var(--accent);
+}
+
+.guidelines-list {
+    margin-top: 1.5rem;
+}
+
+.guideline-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.guideline-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(52, 152, 219, 0.1);
+    color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.submission-steps {
+    margin: 2rem 0;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 30px;
+    height: 30px;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+    flex-shrink: 0;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .refer-content {
+    .about-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .beliefs-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .beliefs-grid {
         grid-template-columns: 1fr;
     }
     
-    .page-title {
-        font-size: 2.2rem;
+    .card-header {
+        flex-direction: column;
+        text-align: center;
     }
-}
+    
+    .card-header i {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    }
