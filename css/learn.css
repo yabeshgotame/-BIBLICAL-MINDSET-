@@ -1,0 +1,268 @@
+/* learn.css - Professional Learning Page Styling */
+
+.learn-container {
+    padding: 3rem 0;
+}
+
+.learn-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.learn-header h1 {
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.verse-box {
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid var(--accent);
+    padding: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.verse-box i {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.verse-box p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.verse-ref {
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Categories Section */
+.categories-section {
+    margin: 4rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.section-title i {
+    margin-right: 15px;
+    color: var(--accent);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(52, 152, 219, 0.1);
+    color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+}
+
+.category-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.category-card p {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* Teachings Section */
+.teachings-section {
+    margin: 4rem 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.teachings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.teaching-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+.teaching-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.teaching-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--secondary);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.teaching-category {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.teaching-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.teaching-excerpt {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.teaching-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.read-more i {
+    margin-left: 5px;
+    transition: all 0.3s;
+}
+
+.read-more:hover i {
+    margin-left: 10px;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    margin: 4rem 0;
+}
+
+.newsletter-box {
+    background: var(--primary);
+    color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-text h2 {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-text h2 i {
+    margin-right: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1.5rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter-form button {
+    border-radius: 0 5px 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .view-all {
+        margin-top: 1rem;
+    }
+    
+    .learn-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .newsletter-form button {
+        border-radius: 5px;
+        width: 100%;
+    }
+}
