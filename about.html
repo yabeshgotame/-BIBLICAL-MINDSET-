@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Social Sharing Meta Tags (UPDATED) -->
-  <meta property="og:title" content="About Biblical Mindset">
-  <meta property="og:description" content="Discover our mission and vision">
-  <meta property="og:image" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/images/og-about.png">
-  <meta property="og:url" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/about.html">
-  <meta property="og:type" content="website">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Your Original Head Content (UNTOUCHED) -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Biblical Mindset</title>
+  <title>About Us | Biblical Wisdom Blog</title>
+  <meta name="description" content="Learn about our mission to share biblical wisdom">
+  
+  <!-- Social Meta Tags -->
+  <meta property="og:title" content="About Biblical Wisdom Blog">
+  <meta property="og:description" content="Our mission to share biblical wisdom">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/about.html">
+  
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about.css">
 </head>
-<!-- REST OF YOUR ORIGINAL BODY CONTENT REMAINS EXACTLY THE SAME -->
 <body>
-  <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Biblical Mindset Logo">
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Biblical Wisdom Blog" width="180">
+      </a>
+      
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <nav>
-      <div class="hamburger" id="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <section class="about-hero">
-      <h1>About Us</h1>
-      <p>Discover the mission and vision behind Biblical Mindset.</p>
-    </section>
-
-    <section class="about-content">
-      <div class="about-text">
-        <h2>Our Mission</h2>
-        <p>
-          At Biblical Mindset, our mission is to provide timeless wisdom from the Bible that transforms lives and inspires spiritual growth. We are dedicated to helping you develop a biblical mindset through insightful blogs, resources, and teachings.
-        </p>
-        <h2>Our Vision</h2>
-        <p>
-          Our vision is to create a global community of believers who are deeply rooted in biblical truth and empowered to live out their faith in every area of life. We aim to equip individuals with the tools they need to grow spiritually and make a positive impact in the world.
-        </p>
-      </div>
-    </section>
+  <main class="main">
+    <div class="container">
+      <h1 class="page-title">Our Mission</h1>
+      
+      <section class="about-section">
+        <div class="about-content">
+          <h2>Sharing Timeless Wisdom</h2>
+          <p>Biblical Wisdom Blog was founded in 2023 with a simple mission: to make biblical wisdom accessible and applicable to modern life.</p>
+          
+          <div class="mission-statement">
+            <h3>What We Believe</h3>
+            <ul>
+              <li>The Bible contains eternal truths for all generations</li>
+              <li>Scripture should be understood in its proper context</li>
+              <li>Biblical principles can transform lives today</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <img src="images/about-image.jpg" alt="Our Team" loading="lazy">
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025. All rights reserved. Created by team Yabesh.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Biblical Wisdom Blog. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
