@@ -3,151 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblical Mindset - Transform Your Thinking</title>
+  <title>Biblical Wisdom Blog | Home</title>
   <meta name="description" content="Daily biblical wisdom for modern living">
   
-  <!-- Social Sharing Meta Tags -->
-  <meta property="og:title" content="Biblical Mindset - Transform Your Thinking">
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Biblical Wisdom Blog">
   <meta property="og:description" content="Daily biblical wisdom for modern living">
-  <meta property="og:image" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/images/og-home.png">
-  <meta property="og:url" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:image" content="https://yourdomain.com/images/logo.png">
   
-  <!-- Styles -->
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/blog.css">
   
-  <!-- Preload Critical Assets -->
-  <link rel="preload" href="images/logo.png" as="image">
-  <link rel="preload" href="images/hero-bg.jpg" as="image" media="(min-width: 768px)">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
-  <!-- Header (Matches Your Structure Exactly) -->
-  <header class="main-header">
+  <!-- Header -->
+  <header class="header">
     <div class="container">
-      <div class="header-inner">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.png" alt="Biblical Mindset Logo" width="180" loading="eager">
-          </a>
-        </div>
-        
-        <div class="hamburger" id="hamburger" aria-label="Menu">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </div>
-        
-        <nav class="main-nav" id="mainNav">
-          <ul class="nav-list">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="wisdom.html">Wisdom Library</a></li>
-            <li><a href="studies.html">Bible Studies</a></li>
-            <li><a href="devotionals.html">Daily Devotionals</a></li>
-            <li><a href="about.html">Our Mission</a></li>
-            <li><a href="contact.html">Connect</a></li>
-          </ul>
-          
-          <div class="nav-cta">
-            <a href="contact.html" class="btn btn-prayer">Prayer Request</a>
-          </div>
-        </nav>
-      </div>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Biblical Wisdom Blog" width="180">
+      </a>
+      
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <h1>Transform Your Thinking With Biblical Wisdom</h1>
-        <p>Discover timeless truths for modern living</p>
-        <div class="hero-cta">
-          <a href="wisdom.html" class="btn btn-primary">Explore Wisdom</a>
-          <a href="studies.html" class="btn btn-secondary">Bible Studies</a>
-        </div>
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      <h1 class="page-title">Latest Articles</h1>
+      
+      <div id="blog-container" class="blog-grid">
+        <!-- Blogs load here automatically -->
       </div>
-    </section>
-
-    <!-- Featured Content -->
-    <section class="featured-section">
-      <div class="container">
-        <h2 class="section-title">Featured Teachings</h2>
-        
-        <div class="featured-grid">
-          <!-- Parables of Jesus -->
-          <article class="featured-card">
-            <div class="card-image">
-              <img src="images/parable-jesus.png" alt="Parables of Jesus" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>The Parables of Jesus</h3>
-              <p>Timeless lessons for today's believers</p>
-              <a href="blogs/parable-jesus.html" class="btn">Read Now</a>
-            </div>
-          </article>
-          
-          <!-- Faith Over Fear -->
-          <article class="featured-card">
-            <div class="card-image">
-              <img src="images/faith_over_fear_bible.png" alt="Faith Over Fear" loading="lazy">
-            </div>
-            <div class="card-content">
-              <h3>Faith Over Fear</h3>
-              <p>Biblical strategies for anxiety</p>
-              <a href="blogs/faith-over-fear.html" class="btn">Read Now</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Daily Verse -->
-    <section class="verse-section">
-      <div class="container">
-        <h2>Verse of the Day</h2>
-        <blockquote>
-          <p id="verse-text">"For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope."</p>
-          <footer>- <cite id="verse-reference">Jeremiah 29:11</cite></footer>
-        </blockquote>
-      </div>
-    </section>
+    </div>
   </main>
 
   <!-- Footer -->
-  <footer class="main-footer">
+  <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-about">
-          <img src="images/logo-white.png" alt="Biblical Mindset" class="footer-logo">
-          <p>Transforming lives through God's Word</p>
-        </div>
-        
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="wisdom.html">Wisdom Library</a></li>
-            <li><a href="contact.html">Prayer Request</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-contact">
-          <h3>Connect</h3>
-          <a href="mailto:gotameyabesh@gmail.com">gotameyabesh@gmail.com</a>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2025 Biblical Mindset. All rights reserved.</p>
-      </div>
+      <p>&copy; <span id="year"></span> Biblical Wisdom Blog. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="js/script.js"></script>
-  <script src="js/home.js"></script>
+  <!-- JavaScript -->
+  <script src="js/blog-data.js"></script>
+  <script src="js/main.js"></script>
 </body>
-  </html>
+                                                                                    </html>
