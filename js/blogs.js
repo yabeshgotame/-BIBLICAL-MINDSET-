@@ -6,9 +6,20 @@ const blogs = [
     link: "blogs/parable.html",
     keywords: ["parable", "Jesus", "sower", "prodigal son", "good samaritan"],
     verses: ["Matthew 13:1-23", "Luke 15:11-32", "Luke 10:25-37"]
+  },
+  // ====== ONLY ADD THIS NEW ENTRY ======
+  {
+    title: "Faith Over Fear: Navigating Anxiety in a Digital Age",
+    image: "images/faith_over_fear_bible.png",
+    date: "March 27, 2025",
+    link: "blogs/faith.html",
+    keywords: ["anxiety", "fear", "faith", "digital detox", "peace", "prayer"],
+    verses: ["2 Corinthians 5:7", "Philippians 4:6-7", "Isaiah 41:10"]
   }
+  // ====== DON'T MODIFY BELOW THIS LINE ======
 ];
 
+// === YOUR EXISTING CODE STARTS HERE - DON'T CHANGE ANYTHING BELOW ===
 const blogContainer = document.getElementById('blog-container');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
