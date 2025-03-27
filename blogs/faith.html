@@ -6,27 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Biblical strategies to overcome anxiety in the digital age through faith, God's promises, and practical steps.">
   
+  <!-- SEO Meta Tags -->
+  <meta name="keywords" content="Christian anxiety help, faith over fear, biblical mental health, overcoming worry, digital detox for Christians">
+  
   <!-- Open Graph / Social Media Meta Tags -->
-  <meta property="og:title" content="Faith Over Fear: Navigating Anxiety in a Digital Age | Biblical Mindset">
-  <meta property="og:description" content="Biblical strategies to overcome anxiety in the digital age.">
-  <meta property="og:image" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/images/faith_over_fear_bible.png">
-  <meta property="og:url" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/blogs/faith.html">
+  <meta property="og:title" content="Faith Over Fear: Biblical Strategies for Anxiety in the Digital Age">
+  <meta property="og:description" content="Discover how to replace anxiety with God's peace through Scripture, prayer, and healthy digital habits.">
+  <meta property="og:image" content="https://example.com/images/faith-over-fear-social.jpg">
+  <meta property="og:url" content="https://example.com/faith-over-fear">
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Biblical Mindset">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
   
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Faith Over Fear: Navigating Anxiety in a Digital Age">
-  <meta name="twitter:description" content="Biblical strategies to overcome anxiety in the digital age.">
-  <meta name="twitter:image" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/images/faith_over_fear_bible.png">
-  <meta name="twitter:image:alt" content="Bible open to Philippians 4:6-7 about anxiety">
-  
-  <title>Faith Over Fear: Navigating Anxiety in a Digital Age | Biblical Mindset</title>
+  <title>Faith Over Fear: Biblical Strategies for Anxiety in the Digital Age | Biblical Mindset</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* ===== CORE STYLES ===== */
+    /* ===== GLOBAL STYLES ===== */
     :root {
       --primary: #2c3e50;
       --secondary: #e74c3c;
@@ -35,6 +28,9 @@
       --dark: #1a1f2e;
       --text: #333333;
       --text-light: #6c757d;
+      --success: #27ae60;
+      --warning: #f39c12;
+      --info: #3498db;
     }
     
     * {
@@ -51,151 +47,20 @@
       overflow-x: hidden;
     }
     
-    /* ===== ENHANCED HEADER & NAVIGATION ===== */
-    header {
-      background-color: var(--primary);
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.15);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo-container {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-    
-    .logo {
-      color: white;
-      font-weight: bold;
-      font-size: 1.5rem;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      transition: transform 0.3s ease;
-    }
-    
-    .logo:hover {
-      transform: scale(1.05);
-    }
-    
-    .logo img {
-      height: 40px;
-      width: auto;
-      transition: transform 0.3s ease;
-    }
-    
-    .logo:hover img {
-      transform: rotate(-5deg);
-    }
-    
-    .nav-container {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-    }
-    
-    .back-home {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .back-home:hover {
-      color: var(--accent);
-      background-color: rgba(255,255,255,0.1);
-    }
-    
-    .back-home i {
-      font-size: 0.9rem;
-    }
-    
-    .hamburger {
-      display: none;
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-      padding: 0.5rem;
-      position: relative;
-      z-index: 1001;
-    }
-    
-    .hamburger .line {
-      display: block;
-      width: 25px;
-      height: 3px;
-      background: white;
-      margin: 5px 0;
-      transition: all 0.3s ease;
-    }
-    
-    .nav-links {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      gap: 1.5rem;
-    }
-    
-    .nav-links li {
-      position: relative;
-    }
-    
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      transition: color 0.3s;
-      font-weight: 500;
-      padding: 0.5rem 0;
-      position: relative;
-    }
-    
-    .nav-links a:after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: var(--accent);
-      transition: width 0.3s ease;
-    }
-    
-    .nav-links a:hover:after {
-      width: 100%;
-    }
-    
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-    
     /* ===== TYPOGRAPHY ===== */
-    h1, h2, h3, h4 {
+    h1, h2, h3, h4, h5 {
       font-weight: 700;
-      margin-top: 1.8rem;
-      margin-bottom: 1rem;
       line-height: 1.3;
+      margin-top: 0;
     }
     
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       color: var(--primary);
       text-align: center;
       position: relative;
-      padding-bottom: 1rem;
-      margin-top: 2rem;
+      padding-bottom: 1.5rem;
+      margin: 2rem 0 1.5rem;
     }
     
     h1:after {
@@ -204,575 +69,520 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 100px;
+      width: 120px;
       height: 4px;
       background: var(--accent);
       border-radius: 2px;
     }
     
     h2 {
-      font-size: 1.9rem;
+      font-size: 2.2rem;
       color: var(--primary);
-      position: relative;
-      padding-left: 1.2rem;
-      margin-top: 3rem;
-    }
-    
-    h2:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 5px;
-      background: var(--accent);
-      border-radius: 3px;
+      margin: 3rem 0 1.5rem;
+      padding-left: 1.5rem;
+      border-left: 5px solid var(--accent);
     }
     
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       color: var(--secondary);
-      margin-top: 2.5rem;
-      border-bottom: 2px dashed var(--accent);
+      margin: 2.5rem 0 1.2rem;
+      position: relative;
       padding-bottom: 0.5rem;
-      display: inline-block;
+    }
+    
+    h3:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
     }
     
     h4 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       color: var(--primary);
+      margin: 2rem 0 1rem;
     }
     
     p {
       margin-bottom: 1.8rem;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       line-height: 1.8;
     }
     
-    /* ===== LAYOUT ===== */
+    /* ===== LAYOUT & CONTAINERS ===== */
     .container {
       max-width: 900px;
       margin: 0 auto;
       padding: 2rem;
     }
     
-    .blog-meta {
+    .blog-header {
       text-align: center;
-      color: var(--text-light);
-      margin: 1.5rem 0 3rem;
-      font-size: 1rem;
+      margin-bottom: 3rem;
+    }
+    
+    .blog-meta {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
+      gap: 2rem;
+      margin: 1.5rem 0;
+      color: var(--text-light);
+      font-size: 1rem;
     }
     
-    .blog-meta .date {
+    .blog-meta-item {
       display: flex;
       align-items: center;
       gap: 0.5rem;
     }
     
     /* ===== CONTENT ELEMENTS ===== */
-    .blog-thumbnail {
-      width: 100%;
-      max-height: 450px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin: 2rem 0;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .blog-thumbnail:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    .lead-paragraph {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      color: var(--primary);
+      margin-bottom: 2.5rem;
+      font-weight: 500;
     }
     
     .content-image {
       width: 100%;
-      max-height: 400px;
+      max-height: 500px;
       object-fit: cover;
       border-radius: 8px;
-      margin: 2rem auto;
+      margin: 2.5rem auto;
       display: block;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    
-    .content-image:hover {
-      transform: scale(1.02);
-    }
-    
-    blockquote {
-      background-color: var(--light);
-      border-left: 5px solid var(--accent);
-      padding: 2rem;
-      margin: 3rem 0;
-      font-style: italic;
-      position: relative;
-      border-radius: 0 8px 8px 0;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-    }
-    
-    blockquote::before {
-      content: '"';
-      font-size: 5rem;
-      color: var(--accent);
-      opacity: 0.1;
-      position: absolute;
-      top: -1.5rem;
-      left: 0.5rem;
-      line-height: 1;
-      font-family: serif;
-    }
-    
-    blockquote p {
-      margin-bottom: 0;
-      position: relative;
-      z-index: 1;
-      font-size: 1.2rem;
-      line-height: 1.8;
-    }
-    
-    blockquote cite {
-      display: block;
-      margin-top: 1.5rem;
-      font-style: normal;
-      font-weight: 600;
-      color: var(--primary);
-      text-align: right;
-    }
-    
-    ul, ol {
-      margin-bottom: 2.5rem;
-      padding-left: 2.5rem;
-    }
-    
-    li {
-      margin-bottom: 1rem;
-      padding-left: 0.5rem;
-      line-height: 1.7;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
     
     /* ===== SPECIAL COMPONENTS ===== */
-    .action-steps {
-      background-color: #f0f7ff;
-      border-radius: 10px;
-      padding: 2rem;
-      margin: 3rem 0;
-      border: 2px dashed var(--accent);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .action-steps:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 5px;
-      background: linear-gradient(to right, var(--accent), var(--secondary));
-    }
-    
-    .action-steps h3 {
-      margin-top: 0;
-      color: var(--primary);
-      border-bottom: none;
-    }
-    
-    .verse-box {
+    .scripture-box {
       background-color: #f8f4e8;
-      padding: 2rem;
+      padding: 2.5rem;
       border-radius: 8px;
-      margin: 2.5rem 0;
+      margin: 3rem 0;
       border-left: 5px solid var(--accent);
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
       position: relative;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     }
     
-    .verse-box:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 10px;
-      background: linear-gradient(to right, var(--accent), transparent);
-      opacity: 0.2;
-    }
-    
-    .verse-box p {
+    .scripture-box p {
       font-style: italic;
-      margin-bottom: 0.5rem;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       line-height: 1.8;
+      margin-bottom: 1rem;
     }
     
-    .verse-ref {
+    .scripture-ref {
       text-align: right;
       font-weight: 600;
       color: var(--primary);
-      margin-top: 1rem;
+      font-size: 1.1rem;
     }
     
-    .final-thoughts {
-      background: linear-gradient(135deg, #f8f9fa, #e8f4f8);
-      padding: 3rem;
+    .action-card {
+      background-color: #f0f7ff;
       border-radius: 10px;
-      margin: 4rem 0;
+      padding: 2.5rem;
+      margin: 3rem 0;
+      border: 2px dashed var(--accent);
       position: relative;
-      overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     }
     
-    .final-thoughts:before {
-      content: '';
+    .action-card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+    
+    .step-list {
+      list-style-type: none;
+      counter-reset: step-counter;
+      margin: 2rem 0;
+    }
+    
+    .step-list li {
+      counter-increment: step-counter;
+      margin-bottom: 1.5rem;
+      padding-left: 3.5rem;
+      position: relative;
+    }
+    
+    .step-list li:before {
+      content: counter(step-counter);
       position: absolute;
-      top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" opacity="0.05"><path d="M30,30 Q50,10 70,30 T90,50 Q70,70 50,90 T10,50 Q30,30 50,10 T90,30" fill="none" stroke="%232c3e50" stroke-width="1"/></svg>');
-      background-size: 100px 100px;
-      opacity: 0.1;
-      z-index: 0;
+      top: 0;
+      background: var(--accent);
+      color: white;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
     }
     
-    .final-thoughts > * {
+    .checklist {
+      list-style-type: none;
+      margin: 1.5rem 0;
+    }
+    
+    .checklist li {
       position: relative;
-      z-index: 1;
+      padding-left: 2rem;
+      margin-bottom: 1rem;
     }
     
-    .image-grid {
+    .checklist li:before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: var(--success);
+    }
+    
+    .verse-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1.5rem;
       margin: 3rem 0;
     }
     
-    .image-grid img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
+    .verse-card {
+      background: white;
       border-radius: 8px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      border-top: 4px solid var(--accent);
     }
     
-    .image-grid img:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    .verse-card p {
+      font-style: italic;
+      margin-bottom: 0.5rem;
     }
     
-    /* ===== BUTTONS & LINKS ===== */
-    .cta-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      background-color: var(--secondary);
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 6px;
-      text-decoration: none;
+    .verse-card .ref {
       font-weight: 600;
-      transition: all 0.3s ease;
-      margin-top: 1.5rem;
-      box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
-      border: none;
-      cursor: pointer;
+      color: var(--primary);
+      text-align: right;
+    }
+    
+    .conclusion-section {
+      background: linear-gradient(135deg, #f8f9fa, #e8f4f8);
+      padding: 3.5rem;
+      border-radius: 10px;
+      margin: 4rem 0;
       position: relative;
       overflow: hidden;
     }
     
-    .cta-button:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-      transition: 0.5s;
-    }
-    
-    .cta-button:hover {
-      background-color: #c0392b;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(231, 76, 60, 0.4);
-    }
-    
-    .cta-button:hover:before {
-      left: 100%;
-    }
-    
-    .cta-button i {
-      font-size: 1rem;
-    }
-    
-    /* ===== FOOTER ===== */
-    footer {
-      background-color: var(--primary);
-      color: white;
+    .conclusion-section h2 {
+      border-left: none;
+      padding-left: 0;
       text-align: center;
-      padding: 3rem 1rem;
-      margin-top: 4rem;
-      position: relative;
     }
     
-    footer:before {
+    .conclusion-section h2:after {
       content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 5px;
-      background: linear-gradient(to right, var(--accent), var(--secondary));
+      display: block;
+      width: 100px;
+      height: 4px;
+      background: var(--accent);
+      margin: 1rem auto;
     }
     
-    .footer-content {
-      max-width: 800px;
-      margin: 0 auto;
+    .action-plan {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2.5rem 0;
     }
     
-    .footer-content p:first-child {
+    .plan-item {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    
+    .plan-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .plan-item i {
+      font-size: 2rem;
+      color: var(--accent);
       margin-bottom: 1rem;
-      font-size: 1.1rem;
-    }
-    
-    .footer-content p:last-child {
-      color: rgba(255,255,255,0.7);
-      font-size: 0.9rem;
     }
     
     /* ===== RESPONSIVE ADJUSTMENTS ===== */
-    @media (max-width: 992px) {
-      .container {
-        padding: 1.5rem;
-      }
-      
+    @media (max-width: 768px) {
       h1 {
         font-size: 2.2rem;
       }
       
       h2 {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
       }
       
       h3 {
-        font-size: 1.4rem;
-      }
-    }
-    
-    @media (max-width: 768px) {
-      header {
-        padding: 1rem;
+        font-size: 1.6rem;
       }
       
-      .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 30px;
-        height: 24px;
-      }
-      
-      .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 280px;
-        height: 100vh;
-        background-color: var(--dark);
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 6rem 2rem 2rem;
-        gap: 1rem;
-        transition: right 0.3s ease;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-      }
-      
-      .nav-links.active {
-        right: 0;
-      }
-      
-      .nav-links li {
-        width: 100%;
-        margin: 0;
-      }
-      
-      .nav-links a {
-        padding: 0.8rem 0;
-        display: block;
-        width: 100%;
-      }
-      
-      .nav-links a:after {
-        display: none;
-      }
-      
-      .back-home {
-        display: none;
-      }
-      
-      .image-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .content-image {
-        max-height: 300px;
-      }
-      
-      blockquote {
+      .container {
         padding: 1.5rem;
       }
       
-      .final-thoughts {
+      .conclusion-section {
         padding: 2rem;
       }
     }
     
     @media (max-width: 576px) {
       h1 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
       }
       
       h2 {
-        font-size: 1.5rem;
-      }
-      
-      h3 {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
       }
       
       p {
-        font-size: 1rem;
+        font-size: 1.05rem;
       }
       
-      .blog-thumbnail {
-        max-height: 300px;
+      .scripture-box {
+        padding: 1.5rem;
+      }
+      
+      .scripture-box p {
+        font-size: 1.1rem;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Enhanced Header with Both Hamburger and Back Button -->
-  <header>
-    <div class="logo-container">
-      <a href="../index.html" class="logo">
-        <img src="../images/logo.png" alt="Biblical Mindset Logo">
-      </a>
-    </div>
-    
-    <div class="nav-container">
-      <a href="../index.html" class="back-home">
-        <i class="fas fa-arrow-left"></i> Back to Home
-      </a>
-      
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
-      
-      <ul class="nav-links" id="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../blogs.html">Blogs</a></li>
-        <li><a href="../resources.html">Resources</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
   <div class="container">
     <article>
-      <h1>Faith Over Fear: Navigating Anxiety in a Digital Age</h1>
-      <div class="blog-meta">
-        <span class="date"><i class="far fa-calendar-alt"></i> March 27, 2025</span>
+      <div class="blog-header">
+        <h1>Faith Over Fear: Biblical Strategies for Anxiety in the Digital Age</h1>
+        <div class="blog-meta">
+          <span class="blog-meta-item"><i class="far fa-calendar-alt"></i> March 27, 2025</span>
+          <span class="blog-meta-item"><i class="far fa-clock"></i> 8 min read</span>
+        </div>
       </div>
-      <img src="../images/faith_over_fear_bible.png" alt="Open Bible with Philippians 4:6-7 highlighted" class="blog-thumbnail" loading="lazy">
+      
+      <img src="../images/digital_anxiety_versus_faith.jpg" alt="Contrast between digital anxiety and peaceful faith" class="content-image" loading="lazy">
+      
+      <p class="lead-paragraph">In today's hyper-connected world, anxiety has become a silent epidemic. Social media, global crises, financial struggles, and personal expectations weigh heavily on our minds. The constant flood of information and comparison often leads to fear, worry, and self-doubt. However, as believers, we are called to walk by faith, not by sight (2 Corinthians 5:7).</p>
+      
+      <p>How do we silence the noise of anxiety and embrace God's peace in a world that never stops? The Bible offers a timeless antidote to fear—God's presence, His promises, and practical wisdom for daily living. This comprehensive guide explores how to navigate anxiety with faith as your foundation.</p>
 
       <section>
-        <p>In today's hyper-connected world, anxiety has become a silent epidemic. Social media, global crises, financial struggles, and personal expectations weigh heavily on our minds. The constant flood of information and comparison often leads to fear, worry, and self-doubt. However, as believers, we are called to walk by faith, not by sight (2 Corinthians 5:7).</p>
-        <p>How do we silence the noise of anxiety and embrace God's peace in a world that never stops? The Bible offers a timeless antidote to fear—God's presence, His promises, and practical wisdom for daily living. Let's explore how we can navigate anxiety in today's world with faith over fear.</p>
+        <h2>Understanding the Root of Anxiety</h2>
+        <img src="../images/anxiety_root_causes.jpg" alt="Illustration showing roots of anxiety" class="content-image" loading="lazy">
+        
+        <p>Anxiety is often fueled by uncertainty and the desire for control. We worry about the future, relationships, finances, and health, wondering if we will have enough, if we will be enough, or if things will turn out as we hope.</p>
+        
+        <h3>Biblical Perspective: Trusting God in the Unknown</h3>
+        <p>The Bible consistently reminds us that we are not in control, but God is. Anxiety grows when we try to handle life's burdens alone, but faith thrives when we surrender to God's plan.</p>
+        
+        <div class="scripture-box">
+          <p>"Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes? Look at the birds of the air; they do not sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than they?"</p>
+          <div class="scripture-ref">Matthew 6:25-27 (NIV)</div>
+        </div>
+        
+        <p>God's provision is constant. When we fix our eyes on Him, we shift from fear of the unknown to faith in His promises. Consider these biblical truths about worry:</p>
+        
+        <ul class="checklist">
+          <li>Worry cannot add a single hour to your life (Matthew 6:27)</li>
+          <li>God knows your needs before you ask (Matthew 6:8)</li>
+          <li>His grace is sufficient in weakness (2 Corinthians 12:9)</li>
+          <li>He works all things for good (Romans 8:28)</li>
+        </ul>
       </section>
 
-      <!-- [All other sections remain exactly the same as your original content...] -->
-      
-      <section class="final-thoughts">
+      <section>
+        <h2>The Digital Age: A Catalyst for Anxiety</h2>
+        <img src="../images/digital_overload.jpg" alt="Person overwhelmed by digital devices" class="content-image" loading="lazy">
+        
+        <p>While technology has made life more convenient, it has also increased anxiety. Research shows that heavy social media users are significantly more likely to experience depression and anxiety compared to moderate users.</p>
+        
+        <h3>The Traps of Social Media & Constant News Consumption</h3>
+        
+        <div class="action-card">
+          <h4>Comparison Culture</h4>
+          <p>We see highlight reels of others' success and feel inadequate. The average user spends 2.5 hours daily on social media, often absorbing curated versions of reality that distort our self-perception.</p>
+          
+          <h4>Information Overload</h4>
+          <p>Constant news updates make us feel like the world is falling apart. The 24/7 news cycle amplifies negative events while underreporting positive developments.</p>
+          
+          <h4>Validation Seeking</h4>
+          <p>We rely on likes, comments, and followers to determine our worth, creating an unhealthy dependence on external affirmation.</p>
+        </div>
+        
+        <div class="scripture-box">
+          <p>"Above all else, guard your heart, for everything you do flows from it."</p>
+          <div class="scripture-ref">Proverbs 4:23 (NIV)</div>
+        </div>
+        
+        <h3>Solution: Digital Boundaries for Spiritual Health</h3>
+        
+        <ol class="step-list">
+          <li>
+            <h4>Set a Time Limit</h4>
+            <p>Schedule screen-free moments to focus on God. Consider implementing a "digital Sabbath" one day per week where you disconnect from non-essential technology.</p>
+          </li>
+          <li>
+            <h4>Curate Your Content</h4>
+            <p>Remove accounts that make you feel anxious or insecure. Replace them with faith-based pages, sermons, and Christian communities that edify your spirit.</p>
+          </li>
+          <li>
+            <h4>Establish Tech-Free Zones</h4>
+            <p>Keep bedrooms and mealtimes device-free. Create physical spaces dedicated to prayer and Scripture reading without digital distractions.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Overcoming Fear Through Faith</h2>
+        <img src="../images/prayer_overcoming_fear.jpg" alt="Person praying with open Bible" class="content-image" loading="lazy">
+        
+        <h3>1. Daily Prayer & Surrender</h3>
+        <p>Anxiety is an invitation to pray and trust. The Bible encourages us to bring every worry to God instead of carrying it alone.</p>
+        
+        <div class="scripture-box">
+          <p>"Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus."</p>
+          <div class="scripture-ref">Philippians 4:6-7 (NIV)</div>
+        </div>
+        
+        <h4>How to Apply This:</h4>
+        
+        <div class="action-card">
+          <h5>Morning Prayer of Surrender</h5>
+          <p>"Heavenly Father, I give You my worries about [specific concern]. I trust You with this situation and receive Your peace that passes understanding. Help me to walk in faith today."</p>
+          
+          <h5>Evening Gratitude Journal</h5>
+          <p>Record 3 ways God provided for you today, no matter how small. This builds a habit of noticing God's faithfulness.</p>
+        </div>
+        
+        <h3>2. Meditating on God's Promises</h3>
+        <p>What you feed your mind will shape your emotions. When anxiety creeps in, replace fearful thoughts with God's truth.</p>
+        
+        <div class="verse-grid">
+          <div class="verse-card">
+            <p>"Do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."</p>
+            <div class="ref">Isaiah 41:10</div>
+          </div>
+          <div class="verse-card">
+            <p>"For God has not given us a spirit of fear, but of power and of love and of a sound mind."</p>
+            <div class="ref">2 Timothy 1:7</div>
+          </div>
+          <div class="verse-card">
+            <p>"When anxiety was great within me, your consolation brought me joy."</p>
+            <div class="ref">Psalm 94:19</div>
+          </div>
+        </div>
+        
+        <h4>Practical Application:</h4>
+        <ul class="checklist">
+          <li>Write key verses on index cards and place them where you'll see them daily</li>
+          <li>Set Scripture as your phone lock screen</li>
+          <li>Use worship music to fill your environment with God's peace</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Practical Steps to Cultivate Peace</h2>
+        <img src="../images/peaceful_routine.jpg" alt="Peaceful morning routine with Bible" class="content-image" loading="lazy">
+        
+        <h3>1. Digital Detox & Quiet Time with God</h3>
+        
+        <div class="scripture-box">
+          <p>"Very early in the morning, while it was still dark, Jesus got up, left the house and went off to a solitary place, where he prayed."</p>
+          <div class="scripture-ref">Mark 1:35 (NIV)</div>
+        </div>
+        
+        <p>Jesus modeled intentional breaks to be alone with God. In our always-on culture, we need this more than ever.</p>
+        
+        <div class="action-card">
+          <h4>Morning Reset Challenge</h4>
+          <ol>
+            <li><strong>First 30 Minutes:</strong> No phone - start with prayer and Scripture</li>
+            <li><strong>Gratitude Practice:</strong> List 3 things you're thankful for</li>
+            <li><strong>Daily Intentions:</strong> Ask God to guide your priorities</li>
+          </ol>
+        </div>
+        
+        <h3>2. Community & Accountability</h3>
+        
+        <div class="scripture-box">
+          <p>"Carry each other's burdens, and in this way you will fulfill the law of Christ."</p>
+          <div class="scripture-ref">Galatians 6:2 (NIV)</div>
+        </div>
+        
+        <p>Isolation fuels anxiety, while Christian community provides support and perspective.</p>
+        
+        <h4>Building Your Faith Community:</h4>
+        <ul class="checklist">
+          <li>Join a Bible study or small group for authentic connection</li>
+          <li>Find an accountability partner for prayer and encouragement</li>
+          <li>Serve others to shift focus from your worries</li>
+        </ul>
+        
+        <h3>3. Gratitude & Worship Practices</h3>
+        
+        <div class="scripture-box">
+          <p>"Rejoice always, pray continually, give thanks in all circumstances; for this is God's will for you in Christ Jesus."</p>
+          <div class="scripture-ref">1 Thessalonians 5:16-18 (NIV)</div>
+        </div>
+        
+        <p>Anxiety thrives in negativity, but gratitude shifts our focus to God's goodness.</p>
+        
+        <div class="action-card">
+          <h4>30-Day Gratitude Challenge</h4>
+          <p>Each day, write down:</p>
+          <ol>
+            <li>One blessing from God</li>
+            <li>One answered prayer</li>
+            <li>One attribute of God's character</li>
+          </ol>
+          <p>This simple practice can rewire your brain to notice God's faithfulness.</p>
+        </div>
+      </section>
+
+      <section class="conclusion-section">
         <h2>Final Thoughts: Faith Over Fear</h2>
-        <img src="../images/jesus_holding_hand_storm.png" alt="Jesus holding a person's hand in a storm" class="content-image" loading="lazy">
+        <img src="../images/jesus_calm_in_storm.jpg" alt="Jesus calming the storm in our lives" class="content-image" loading="lazy">
         
         <p>Anxiety may be a reality of life, but it does not have to control you. The key is to shift your focus from fear to faith—trusting that God is bigger than any challenge you face.</p>
         
-        <h3>Action Plan for Overcoming Anxiety:</h3>
-        <ul>
-          <li>Pray daily & surrender worries to God</li>
-          <li>Limit social media & digital distractions</li>
-          <li>Speak God's promises over your life</li>
-          <li>Find a faith-filled community</li>
-          <li>Practice gratitude & worship</li>
-        </ul>
-        
-        <blockquote>
-          <p>Faith is not the absence of fear, but the courage to trust God despite it.</p>
-          <cite>Sheila Walsh</cite>
-        </blockquote>
-        
-        <p>You are not alone in this battle. God is with you, guiding, protecting, and strengthening you every step of the way.</p>
-        
-        <p><strong>Are you ready to choose faith over fear?</strong></p>
-        
-        <a href="../contact.html" class="cta-button">
-          <i class="fas fa-praying-hands"></i> Need Prayer? Contact Us
-        </a>
-      </section>
-    </article>
-  </div>
-
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Biblical Mindset. All rights reserved.</p>
-      <p>Helping you develop a Christ-centered perspective in a digital world.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Enhanced Hamburger Menu Functionality
-    document.addEventListener('DOMContentLoaded', function() {
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('nav-links');
-      
-      // Toggle mobile menu
-      hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navLinks.classList.toggle('active');
-        
-        // Toggle aria-expanded attribute
-        const isExpanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', !isExpanded);
-      });
-      
-      // Close menu when clicking on links
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', function() {
-          hamburger.classList.remove('active');
-          navLinks.classList.remove('active');
-          hamburger.setAttribute('aria-expanded', 'false');
-        });
-      });
-      
-      // Close menu when clicking outside
-      document.addEventListener('click', function(event) {
-        if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
-          hamburger.classList.remove('active');
-          navLinks.classList.remove('active');
-          hamburger.setAttribute('aria-expanded', 'false');
-        }
-      });
-    });
-  </script>
-</body>
-    </html>
+        <div class="action-plan">
+          <div class="plan-item">
+            <i class="fas fa-pray"></i>
+            <h4>Pray Daily</h4>
+            <p>Surrender worries to God through consistent prayer</p>
+          </div>
+          <div class="plan-item">
+            <i class="fas fa-mobile-screen"></i>
+            <h4>Digital Boundaries</h4>
+            <p>Limit social media & notifications</p>
+          </div>
+          <div class="plan-item">
+            <i class="fas fa-book-bible"></i>
+            <h4>Scripture Focus</h4>
+            <p>Speak God's promises over your life</p>
+          </div>
+          <div class="plan-item">
+            <i class="fas fa-people-group"></i>
+            <h4>Community</h4>
+   
