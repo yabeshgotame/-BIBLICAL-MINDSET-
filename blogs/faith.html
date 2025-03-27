@@ -93,6 +93,15 @@
       padding: 0.5rem;
     }
     
+    .hamburger .line {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 5px 0;
+      transition: all 0.3s ease;
+    }
+    
     .nav-links {
       display: flex;
       list-style: none;
@@ -350,6 +359,18 @@
         z-index: 1000;
       }
       
+      .hamburger.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      
+      .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .hamburger.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+      
       .nav-links {
         display: none;
         flex-direction: column;
@@ -591,11 +612,4 @@
 
   <footer>
     <div class="footer-content">
-      <p>&copy; 2025 Biblical Mindset. All rights reserved.</p>
-      <p>Helping you develop a Christ-centered perspective in a digital world.</p>
-    </div>
-  </footer>
-
-  <script src="../js/script.js" defer></script>
-</body>
-        </html>
+      <p>&copy; 2025 Bib
