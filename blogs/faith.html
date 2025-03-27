@@ -89,39 +89,29 @@
       background: none;
       border: none;
       color: white;
-      font-size: 1.5rem;
       cursor: pointer;
       padding: 0.5rem;
     }
     
-    .hamburger .line {
-      display: block;
-      width: 25px;
-      height: 3px;
-      background: white;
-      margin: 5px 0;
-      transition: all 0.3s ease;
-    }
-    
-    .nav-menu {
+    .nav-links {
       display: flex;
       list-style: none;
       margin: 0;
       padding: 0;
     }
     
-    .nav-menu li {
+    .nav-links li {
       margin-left: 1.5rem;
     }
     
-    .nav-menu a {
+    .nav-links a {
       color: white;
       text-decoration: none;
       transition: color 0.3s;
       font-weight: 500;
     }
     
-    .nav-menu a:hover {
+    .nav-links a:hover {
       color: var(--accent);
     }
     
@@ -360,19 +350,7 @@
         z-index: 1000;
       }
       
-      .hamburger.active .line:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-      }
-      
-      .hamburger.active .line:nth-child(2) {
-        opacity: 0;
-      }
-      
-      .hamburger.active .line:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-      }
-      
-      .nav-menu {
+      .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -384,11 +362,11 @@
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
       }
       
-      .nav-menu.active {
+      .nav-links.active {
         display: flex;
       }
       
-      .nav-menu li {
+      .nav-links li {
         margin: 0;
         padding: 0.8rem 2rem;
         border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -415,7 +393,7 @@
         <span class="line"></span>
         <span class="line"></span>
       </button>
-      <ul class="nav-menu" id="nav-menu">
+      <ul class="nav-links" id="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../blogs.html">Blogs</a></li>
@@ -477,7 +455,7 @@
         <p><strong>Solution:</strong> Limit exposure to anxiety-inducing content. Choose what you consume wisely and replace fear-driven narratives with faith-building truths.</p>
         
         <div class="action-steps">
-          <h3>✅ Action Steps:</h3>
+          <h3>Action Steps:</h3>
           <ul>
             <li><strong>Set a Time Limit</strong> – Schedule screen-free moments to focus on God.</li>
             <li><strong>Unfollow Negativity</strong> – Remove accounts that make you feel anxious or insecure.</li>
@@ -508,7 +486,7 @@
         <p>What you feed your mind will shape your emotions. When anxiety creeps in, replace fearful thoughts with God's truth.</p>
         
         <div class="action-steps">
-          <h3>✅ Powerful Verses to Declare Over Your Life:</h3>
+          <h3>Powerful Verses to Declare Over Your Life:</h3>
           <ul>
             <li><strong>Isaiah 41:10</strong> – "Do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."</li>
             <li><strong>2 Timothy 1:7</strong> – "For God has not given us a spirit of fear, but of power and of love and of a sound mind."</li>
@@ -541,7 +519,7 @@
         <p>Jesus took intentional breaks to be alone with God. We need the same.</p>
         
         <div class="action-steps">
-          <h3>✅ Try This:</h3>
+          <h3>Try This:</h3>
           <ul>
             <li>Start your morning without your phone—pray and read scripture first.</li>
             <li>Take social media breaks—turn off notifications and set time limits.</li>
@@ -558,7 +536,7 @@
         <p>Don't battle anxiety alone. Find a trusted Christian friend, mentor, or pastor who can pray with you and encourage you.</p>
         
         <div class="action-steps">
-          <h3>✅ Join a Bible Study or Small Group</h3>
+          <h3>Join a Bible Study or Small Group</h3>
           <ul>
             <li>Engage in fellowship with believers who uplift your faith.</li>
             <li>Talk to someone when anxiety feels overwhelming.</li>
@@ -575,7 +553,7 @@
         <p>Anxiety thrives in negativity, but gratitude shifts our focus to God's goodness.</p>
         
         <div class="action-steps">
-          <h3>✅ Practical Steps:</h3>
+          <h3>Practical Steps:</h3>
           <ul>
             <li>Keep a gratitude journal—write 3 things you're thankful for daily.</li>
             <li>Listen to worship music to refocus your heart on God.</li>
@@ -589,13 +567,13 @@
         
         <p>Anxiety may be a reality of life, but it does not have to control you. The key is to shift your focus from fear to faith—trusting that God is bigger than any challenge you face.</p>
         
-              <h3>Action Plan for Overcoming Anxiety:</h3>
+        <h3>Action Plan for Overcoming Anxiety:</h3>
         <ul>
-          <li>✅ Pray daily & surrender worries to God</li>
-          <li>✅ Limit social media & digital distractions</li>
-          <li>✅ Speak God's promises over your life</li>
-          <li>✅ Find a faith-filled community</li>
-          <li>✅ Practice gratitude & worship</li>
+          <li>Pray daily & surrender worries to God</li>
+          <li>Limit social media & digital distractions</li>
+          <li>Speak God's promises over your life</li>
+          <li>Find a faith-filled community</li>
+          <li>Practice gratitude & worship</li>
         </ul>
         
         <blockquote>
@@ -620,4 +598,4 @@
 
   <script src="../js/script.js" defer></script>
 </body>
-</html>
+        </html>
