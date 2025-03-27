@@ -1,7 +1,6 @@
-// main.js - Core Functionality for All Pages
-
+// Enhanced main.js
 document.addEventListener('DOMContentLoaded', function() {
-    // Hamburger Menu Toggle
+    // Menu Toggle
     const menuToggle = document.getElementById('menuToggle');
     const sidebar = document.getElementById('sidebar');
     const sidebarClose = document.getElementById('sidebarClose');
@@ -18,31 +17,72 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = 'auto';
     });
     
-    // Search Modal Toggle
-    const searchIcon = document.getElementById('searchIcon');
+    // Search Functionality
+    const searchToggle = document.getElementById('searchToggle');
     const searchModal = document.getElementById('searchModal');
     const closeSearch = document.querySelector('.close-search');
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const searchResults = document.getElementById('searchResults');
     
-    if(searchIcon && searchModal) {
-        searchIcon.addEventListener('click', function() {
+    if(searchToggle) {
+        searchToggle.addEventListener('click', function() {
             searchModal.classList.add('active');
             document.body.style.overflow = 'hidden';
-        });
-        
-        closeSearch.addEventListener('click', function() {
-            searchModal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        });
-        
-        window.addEventListener('click', function(e) {
-            if(e.target === searchModal) {
-                searchModal.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            }
+            searchInput.focus();
         });
     }
     
-    // FAQ Accordion for Prayer Page
+    closeSearch.addEventListener('click', function() {
+        searchModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+    
+    window.addEventListener('click', function(e) {
+        if(e.target === searchModal) {
+            searchModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Search functionality
+    if(searchButton) {
+        searchButton.addEventListener('click', performSearch);
+        searchInput.addEventListener('keypress', function(e) {
+            if(e.key === 'Enter') performSearch();
+        });
+    }
+    
+    function performSearch() {
+        const query = searchInput.value.trim();
+        if(query.length < 3) {
+            searchResults.innerHTML = '<p>Please enter at least 3 characters</p>';
+            return;
+        }
+        
+        // Simulate search (in a real app, this would be an API call)
+        searchResults.innerHTML = '<div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> Searching...</div>';
+        
+        setTimeout(() => {
+            // This would be replaced with actual search results
+            searchResults.innerHTML = `
+                <div class="search-result">
+                    <h3><a href="blogs/fear-vs-faith.html">Faith Over Fear: Biblical Strategies</a></h3>
+                    <p>Discover how ancient Scripture speaks to modern anxieties in our technology-driven world.</p>
+                </div>
+                <div class="search-result">
+                    <h3><a href="learn.html">Overcoming Fear Through Scripture</a></h3>
+                    <p>Key Bible verses to help combat fear and anxiety in daily life.</p>
+                </div>
+                <div class="search-result">
+                    <h3><a href="blogs/power-of-forgiveness.html">The Power of Forgiveness</a></h3>
+                    <p>Release offense and experience emotional freedom through Christ.</p>
+                </div>
+            `;
+        }, 800);
+    }
+    
+    // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
     if(faqItems.length > 0) {
         faqItems.forEach(item => {
@@ -53,11 +93,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Smooth Scrolling for Anchor Links
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const targetId = this.getAttribute('href');
+            const target = document.querySelector(targetId);
             if(target) {
                 window.scrollTo({
                     top: target.offsetTop - 80,
@@ -67,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Close Sidebar When Clicking on Links
+    // Close sidebar when clicking on links
     const sidebarLinks = document.querySelectorAll('.sidebar-menu a');
     sidebarLinks.forEach(link => {
         link.addEventListener('click', function() {
@@ -76,4 +117,21 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = 'auto';
         });
     });
+    
+    // Lazy loading images
+    if('IntersectionObserver' in window) {
+        const lazyImages = document.querySelectorAll('img[data-src]');
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+        
+        lazyImages.forEach(img => imageObserver.observe(img));
+    }
 });
