@@ -1,74 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Social Sharing Meta Tags (UPDATED) -->
-  <meta property="og:title" content="Contact Biblical Mindset">
-  <meta property="og:description" content="Get in touch for prayer or questions">
-  <meta property="og:image" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/images/og-contact.png">
-  <meta property="og:url" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/contact.html">
-  <meta property="og:type" content="website">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Your Original Head Content (UNTOUCHED) -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Biblical Mindset</title>
+  <title>Contact Us | Biblical Wisdom Blog</title>
+  <meta name="description" content="Get in touch with Biblical Wisdom Blog">
+  
+  <!-- Social Meta Tags -->
+  <meta property="og:title" content="Contact Biblical Wisdom Blog">
+  <meta property="og:description" content="Reach out with questions or prayer requests">
+  
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/contact.css">
 </head>
-<!-- REST OF YOUR ORIGINAL BODY CONTENT REMAINS EXACTLY THE SAME -->
 <body>
-  <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Biblical Mindset Logo">
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Biblical Wisdom Blog" width="180">
+      </a>
+      
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <nav>
-      <div class="hamburger" id="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <section class="contact-hero">
-      <h1>Contact Us</h1>
-      <p>We'd love to hear from you! Reach out to us for any questions or feedback.</p>
-    </section>
-
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="mailto:gotameyabesh@gmail.com" method="post" enctype="text/plain">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+  <main class="main">
+    <div class="container">
+      <h1 class="page-title">Get In Touch</h1>
+      
+      <div class="contact-grid">
+        <section class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </section>
+        
+        <section class="contact-info">
+          <h2>Contact Information</h2>
+          <address>
+            <p><i class="fas fa-envelope"></i> contact@biblicalblog.com</p>
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Bible Way, Jerusalem</p>
+          </address>
+          
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025. All rights reserved. Created by team Yabesh.</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Biblical Wisdom Blog. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
   </html>
