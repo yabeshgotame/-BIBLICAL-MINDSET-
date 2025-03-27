@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Refer your biblical content to be featured on Biblical Mindset Therapy">
+    <meta property="og:image" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/images/og-refer.png">
+    <title>Refer Content | Biblical Mindset Therapy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css"> <!-- Additional styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (Identical across all pages) -->
+    <header>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="index.html" class="logo">BIBLICAL <span>MINDSET</span></a>
+        <img src="images/search-icon.png" alt="Search" class="search-icon" id="searchIcon">
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <span class="sidebar-close" id="sidebarClose">&times;</span>
+        <ul class="sidebar-menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="learn.html"><i class="fas fa-book-open"></i> Learn</a></li>
+            <li><a href="refer.html"><i class="fas fa-share-alt"></i> Refer</a></li>
+            <li><a href="pray-request.html"><i class="fas fa-praying-hands"></i> Pray</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <input type="text" placeholder="Search teachings..." id="searchInput">
+            <button id="searchButton"><i class="fas fa-search"></i> Search</button>
+            <span class="close-search">&times;</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="refer-container">
+        <div class="container">
+            <h1 class="page-title">Refer Your Content</h1>
+            <div class="refer-content">
+                <div class="refer-text">
+                    <h2>Share Your Biblical Insights</h2>
+                    <p>We welcome submissions from our community! If you have written biblically sound content that aligns with our mission, you can refer it for potential publication.</p>
+                    
+                    <div class="benefits">
+                        <h3><i class="fas fa-check-circle"></i> Benefits of Referring Content:</h3>
+                        <ul>
+                            <li>Full credit with your name and bio</li>
+                            <li>Reach a wider Christian audience</li>
+                            <li>Contribute to spiritual growth</li>
+                            <li>Potential to become a regular contributor</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guidelines">
+                        <h3><i class="fas fa-clipboard-check"></i> Submission Guidelines:</h3>
+                        <ol>
+                            <li>Content must be original and biblically accurate</li>
+                            <li>Minimum 800 words for articles</li>
+                            <li>Include Scripture references (NKJV preferred)</li>
+                            <li>No promotional or offensive content</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="refer-action">
+                    <div class="action-card">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h3>Email Your Submission</h3>
+                        <p>Send your content directly to our editorial team for review.</p>
+                        <a href="mailto:gotameyabesh@gmail.com" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Identical across all pages) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>BIBLICAL MINDSET</h3>
+                <p>Dream. Believe. Achieve through Christ.</p>
+                <div class="contact">
+                    <span><i class="fas fa-envelope"></i> info@biblicalmindset.com</span>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="learn.html">Teachings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h4>CONNECT</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/mrryabesh" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/9764790342" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:gotameyabesh@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Biblical Mindset Therapy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
