@@ -1,91 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Biblical Wisdom Blog</title>
-  <meta name="description" content="Get in touch with Biblical Wisdom Blog">
-  
-  <!-- Social Meta Tags -->
-  <meta property="og:title" content="Contact Biblical Wisdom Blog">
-  <meta property="og:description" content="Reach out with questions or prayer requests">
-  
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Biblical Mindset Therapy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="Biblical Wisdom Blog" width="180">
-      </a>
-      
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-      
-      <button class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
+    <!-- Header -->
+    <header>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="index.html" class="logo">BIBLICAL <span>MINDSET</span></a>
+        <img src="images/search-icon.png" alt="Search" class="search-icon" id="searchIcon">
+    </header>
 
-  <main class="main">
-    <div class="container">
-      <h1 class="page-title">Get In Touch</h1>
-      
-      <div class="contact-grid">
-        <section class="contact-form">
-          <h2>Send Us a Message</h2>
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" required>
+    <main class="contact-container">
+        <div class="container">
+            <div class="contact-header">
+                <h1>Get In Touch</h1>
+                <div class="verse-box">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Let us then approach God's throne of grace with confidence, so that we may receive mercy and find grace to help us in our time of need."</p>
+                    <p class="verse-ref">Hebrews 4:16</p>
+                </div>
             </div>
-            
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" rows="5" required></textarea>
-            </div>
-            
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-        </section>
-        
-        <section class="contact-info">
-          <h2>Contact Information</h2>
-          <address>
-            <p><i class="fas fa-envelope"></i> contact@biblicalblog.com</p>
-            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-            <p><i class="fas fa-map-marker-alt"></i> 123 Bible Way, Jerusalem</p>
-          </address>
-          
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </section>
-      </div>
-    </div>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Biblical Wisdom Blog. All rights reserved.</p>
-    </div>
-  </footer>
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <section class="contact-form-section">
+                    <h2><i class="fas fa-envelope"></i> Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="prayer">Prayer Request</option>
+                                <option value="teaching">Teaching Question</option>
+                                <option value="support">Technical Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group human-check">
+                            <input type="checkbox" id="humanCheck">
+                            <label for="humanCheck">If you are human, please leave this unchecked</label>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </section>
 
-  <script src="js/main.js"></script>
+                <!-- Contact Info -->
+                <section class="contact-info-section">
+                    <h2><i class="fas fa-info-circle"></i> Other Ways to Reach Us</h2>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Email</h3>
+                                <p>info@biblicalmindset.com</p>
+                                <p>support@biblicalmindset.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <p>Mon-Fri: 9am-5pm EST</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Mailing Address</h3>
+                                <p>123 Faith Avenue</p>
+                                <p>Spiritual City, SC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <h3><i class="fas fa-share-alt"></i> Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>BIBLICAL MINDSET</h3>
+                <p>Transforming minds through Scripture</p>
+            </div>
+            <div class="footer-section links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h4>CONNECT</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Biblical Mindset Therapy</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
 </body>
   </html>
