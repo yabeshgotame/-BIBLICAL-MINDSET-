@@ -95,33 +95,3 @@
     font-size: 1.1rem;
   }
 }
-/* Add to blog-page.css */
-.blog-section {
-  margin-bottom: 2.5rem;
-  line-height: 1.7;
-}
-
-.section-number {
-  color: var(--accent);
-  margin-right: 0.5rem;
-}
-
-.bible-verse {
-  background: #f8f9fa;
-  border-left: 4px solid var(--accent);
-  padding: 1.25rem;
-  margin: 1.5rem 0;
-}
-
-.action-box {
-  background: #f0f7ff;
-  padding: 1.25rem;
-  border-radius: 8px;
-  margin: 1.5rem 0;
-}
-
-.qa-item {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px dashed #ddd;
-  }
