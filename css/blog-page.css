@@ -47,3 +47,51 @@
   color: var(--text-color);
   margin-left: 1.5rem;
 }
+/* Blog Thumbnail Styles */
+.blog-thumbnail {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 15px 0 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Q&A Section */
+.qa-section {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 40px;
+  border-left: 5px solid #d4af37;
+}
+
+.qa-item {
+  margin-bottom: 20px;
+}
+
+.qa-item h3 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.qa-item p {
+  padding-left: 20px;
+  border-left: 2px solid #e74c3c;
+  margin-top: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .blog-thumbnail {
+    margin: 10px 0 15px;
+  }
+  
+  .qa-section {
+    padding: 15px;
+  }
+  
+  .qa-item h3 {
+    font-size: 1.1rem;
+  }
+}
