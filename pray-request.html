@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Submit your prayer requests to our intercessory team">
-    <meta property="og:image" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/images/og-prayer-req.png">
     <title>Prayer Request | Biblical Mindset Therapy</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/pray-request.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header (Identical) -->
+    <!-- Header -->
     <header>
         <div class="menu-toggle" id="menuToggle">
             <span></span>
@@ -23,79 +20,82 @@
         <img src="images/search-icon.png" alt="Search" class="search-icon" id="searchIcon">
     </header>
 
-    <!-- Sidebar (Identical) -->
-    <nav class="sidebar" id="sidebar">
-        <span class="sidebar-close" id="sidebarClose">&times;</span>
-        <ul class="sidebar-menu">
-            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            <li><a href="learn.html"><i class="fas fa-book-open"></i> Learn</a></li>
-            <li><a href="refer.html"><i class="fas fa-share-alt"></i> Refer</a></li>
-            <li><a href="pray-request.html"><i class="fas fa-praying-hands"></i> Pray</a></li>
-        </ul>
-    </nav>
-
-    <!-- Search Modal (Identical) -->
-    <div class="search-modal" id="searchModal">
-        <div class="search-container">
-            <input type="text" placeholder="Search teachings..." id="searchInput">
-            <button id="searchButton"><i class="fas fa-search"></i> Search</button>
-            <span class="close-search">&times;</span>
-        </div>
-    </div>
-
-    <!-- Prayer Content -->
     <main class="prayer-container">
         <div class="container">
-            <h1 class="page-title">Prayer Request</h1>
+            <div class="prayer-header">
+                <h1>We're Praying With You</h1>
+                <div class="verse-box">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous person is powerful and effective."</p>
+                    <p class="verse-ref">James 5:16</p>
+                </div>
+            </div>
+
             <div class="prayer-content">
                 <div class="prayer-intro">
-                    <h2><i class="fas fa-hands-praying"></i> We're Here to Pray With You</h2>
-                    <p>"Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous person is powerful and effective." <br><strong>James 5:16 (NIV)</strong></p>
-                </div>
-                
-                <div class="prayer-form-container">
-                    <form id="prayerForm" class="prayer-form">
-                        <div class="form-group">
-                            <label for="prayerName">Your Name (Optional)</label>
-                            <input type="text" id="prayerName" name="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="prayerRequest">Prayer Request *</label>
-                            <textarea id="prayerRequest" name="request" rows="6" required placeholder="Share your prayer need..."></textarea>
-                        </div>
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="anonymous" name="anonymous">
-                            <label for="anonymous">Submit anonymously</label>
-                        </div>
-                        <div class="form-group human-check">
-                            <input type="checkbox" id="prayerHumanCheck">
-                            <label for="prayerHumanCheck">If you are human, leave this unchecked</label>
-                        </div>
-                        <button type="submit" class="btn-primary">
-                            <i class="fas fa-paper-plane"></i> Submit Request
-                        </button>
-                    </form>
-                    
                     <div class="prayer-promise">
-                        <h3><i class="fas fa-star"></i> Our Prayer Promise</h3>
-                        <p>Every request is read by our prayer team and lifted up to God. While we can't respond individually, know that your need is being prayed for.</p>
+                        <i class="fas fa-hands-praying"></i>
+                        <h2>Your Prayer Matters</h2>
+                        <p>Our intercessory team is committed to lifting your needs before God. Whether you're facing challenges, celebrating victories, or seeking guidance, we're here to pray with you.</p>
+                    </div>
+                </div>
+
+                <form id="prayerForm" class="prayer-form">
+                    <div class="form-group">
+                        <label for="prayerName">Your Name (Optional)</label>
+                        <input type="text" id="prayerName" name="name" placeholder="First name is fine">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="prayerEmail">Email (Optional)</label>
+                        <input type="email" id="prayerEmail" name="email" placeholder="If you'd like updates">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="prayerRequest">Prayer Need <span class="required">*</span></label>
+                        <textarea id="prayerRequest" name="request" rows="8" required placeholder="Please share your prayer request..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="anonymous" name="anonymous">
+                        <label for="anonymous">Submit anonymously (your name won't be shared)</label>
+                    </div>
+                    
+                    <div class="form-group human-check">
+                        <input type="checkbox" id="humanCheck">
+                        <label for="humanCheck">I confirm I'm not a robot (please leave unchecked)</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-prayer">
+                        <i class="fas fa-paper-plane"></i> Submit Prayer Request
+                    </button>
+                </form>
+
+                <div class="prayer-faq">
+                    <h3><i class="fas fa-question-circle"></i> Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <div class="faq-question">How soon will my request be prayed for?</div>
+                        <div class="faq-answer">Our team prays over all requests within 24 hours of submission.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Will my request be shared publicly?</div>
+                        <div class="faq-answer">No, all requests remain confidential within our prayer team.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I request prayer for someone else?</div>
+                        <div class="faq-answer">Absolutely! Please include their first name and situation.</div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer (Identical) -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
                 <h3>BIBLICAL MINDSET</h3>
-                <p>Dream. Believe. Achieve through Christ.</p>
-                <div class="contact">
-                    <span><i class="fas fa-envelope"></i> info@biblicalmindset.com</span>
-                </div>
+                <p>Transforming minds through Scripture</p>
             </div>
             <div class="footer-section links">
                 <h4>QUICK LINKS</h4>
@@ -103,25 +103,22 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="learn.html">Teachings</a></li>
                 </ul>
             </div>
             <div class="footer-section social">
                 <h4>CONNECT</h4>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/mrryabesh" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/9764790342" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:gotameyabesh@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Biblical Mindset Therapy. All rights reserved.</p>
+            <p>&copy; 2025 Biblical Mindset Therapy</p>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/search.js"></script>
     <script src="js/prayer.js"></script>
 </body>
-  </html>
+                        </html>
