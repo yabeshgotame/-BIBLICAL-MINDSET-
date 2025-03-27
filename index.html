@@ -1,80 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblical Wisdom | Neon Theme</title>
-    <meta name="description" content="Professional biblical wisdom blog with neon theme">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/neon.css">
+    <meta name="description" content="Biblical Mindset Therapy - Transform your thinking with faith-based principles">
+    <meta name="keywords" content="biblical, mindset, therapy, faith, jesus, christian, prayer, positivity">
+    <meta name="author" content="Yabesh Gotame">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/">
+    <meta property="og:title" content="Biblical Mindset Therapy | Faith-Based Transformation">
+    <meta property="og:description" content="Transform your thinking with faith-based principles from the Bible">
+    <meta property="og:image" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/images/og-homepage.png">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Biblical Mindset Therapy | Faith-Based Transformation">
+    <meta name="twitter:description" content="Transform your thinking with faith-based principles from the Bible">
+    <meta name="twitter:image" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/images/og-homepage.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <title>Biblical Mindset Therapy | Home</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="neon-theme">
-    <!-- Header with PNG Logo -->
-    <header class="neon-header">
-        <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo-link">
-                    <img src="images/logo.png" alt="Biblical Wisdom" width="180" class="neon-logo-img">
-                </a>
-                
-                <nav class="neon-nav">
-                    <button class="neon-hamburger" aria-label="Menu">
-                        <img src="images/menu-icon.png" alt="Menu" width="24" class="menu-icon">
-                    </button>
-                    <ul class="neon-menu">
-                        <li><a href="index.html" class="neon-link active">Home</a></li>
-                        <li><a href="about.html" class="neon-link">About</a></li>
-                        <li><a href="contact.html" class="neon-link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+<body>
+    <!-- Header with Hamburger Menu -->
+    <header>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+        <a href="index.html" class="logo">BIBLICAL <span>MINDSET</span></a>
+        <img src="images/search-icon.png" alt="Search" class="search-icon" id="searchIcon">
     </header>
 
-    <!-- Main Content -->
-    <main class="neon-main">
-        <div class="container">
-            <!-- Search Box with PNG Icon -->
-            <div class="neon-search-box">
-                <input type="text" placeholder="Search wisdom..." class="neon-input">
-                <button class="neon-search-btn">
-                    <img src="images/search-icon.png" alt="Search" width="20" class="search-icon">
-                </button>
-            </div>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <span class="sidebar-close" id="sidebarClose">&times;</span>
+        <ul class="sidebar-menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            <li><a href="learn.html"><i class="fas fa-book-open"></i> Learn Something</a></li>
+            <li><a href="refer.html"><i class="fas fa-share-alt"></i> Refer Content</a></li>
+            <li><a href="pray-request.html"><i class="fas fa-praying-hands"></i> Prayer Request</a></li>
+        </ul>
+    </nav>
 
-            <h1 class="neon-title">Our Contents</h1>
-            
-            <!-- Blog Grid -->
-            <div class="neon-grid" id="blog-container">
-                <!-- Blogs load here from blog-data.js -->
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <input type="text" placeholder="Search biblical teachings..." id="searchInput">
+            <button id="searchButton"><i class="fas fa-search"></i> Search</button>
+            <span class="close-search">&times;</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>FAITH OVER FEAR</h1>
+        <p>TRANSFORM YOUR MIND WITH BIBLICAL PRINCIPLES</p>
+        <div class="hero-buttons">
+            <a href="learn.html" class="btn-primary">Start Learning</a>
+            <a href="pray-request.html" class="btn-secondary">Request Prayer</a>
+        </div>
+    </section>
+
+    <!-- Featured Blog Section -->
+    <section class="featured-blog">
+        <div class="container">
+            <h2 class="section-title">FEATURED TEACHING</h2>
+            <div class="blog-card featured">
+                <div class="blog-image" style="background-image: url('images/parable-jesus.jpg')"></div>
+                <div class="blog-content">
+                    <span class="blog-category">PARABLE OF JESUS</span>
+                    <h3>Fear Vs Faith: The Digital Demand</h3>
+                    <p class="blog-excerpt">In a world dominated by digital noise, discover how Jesus' parables teach us to choose faith over fear in our daily lives...</p>
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="far fa-calendar-alt"></i> June 10, 2025</span>
+                        <a href="blogs/fear-vs-faith.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <!-- Footer with Contact Info -->
-    <footer class="neon-footer">
+    <!-- Popular Blogs Section -->
+    <section class="popular-blogs">
         <div class="container">
-            <div class="neon-contact-box">
-                <h3>Connect With Us</h3>
-                <div class="contact-links">
-                    <a href="mailto:gotameyabesh@gmail.com" class="contact-link">
-                        <i class="fas fa-envelope"></i> gotameyabesh@gmail.com
+            <h2 class="section-title">POPULAR TEACHINGS</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image" style="background-image: url('images/forgiveness.jpg')"></div>
+                    <div class="blog-content">
+                        <h3>The Power of Forgiveness</h3>
+                        <p class="blog-excerpt">Helps You Let Go and Find Peace through Christ's example...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> March 4, 2025</span>
+                            <a href="blogs/power-of-forgiveness.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional blog cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>READY TO TRANSFORM YOUR MINDSET?</h2>
+            <p>Join our community of believers growing in faith daily</p>
+            <div class="cta-buttons">
+                <a href="learn.html" class="btn-primary">Explore Teachings</a>
+                <a href="contact.html" class="btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>BIBLICAL MINDSET</h3>
+                <p>Dream. Believe. Achieve through Christ.</p>
+                <div class="contact">
+                    <span><i class="fas fa-envelope"></i> info@biblicalmindset.com</span>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h4>IMPORTANT PAGES</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h4>FOLLOW US</h4>
+                <p>Connect for daily biblical insights</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/mrryabesh" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://wa.me/9764790342" class="contact-link">
-                        <i class="fab fa-whatsapp"></i> +976 4790342
+                    <a href="https://wa.me/9764790342" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
-                    <a href="https://www.facebook.com/mrryabesh" class="contact-link">
-                        <i class="fab fa-facebook"></i> /mrryabesh
+                    <a href="mailto:gotameyabesh@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
-            <p class="neon-copyright">&copy; <span id="year"></span> Biblical Wisdom. All rights reserved.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Biblical Mindset. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/blog-data.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
 </body>
-                      </html>
+        </html>
