@@ -1,0 +1,347 @@
+/* Base Neon Styles */
+.neon-theme {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Neon Header */
+.neon-header {
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid #08f;
+    box-shadow: 0 0 15px rgba(0, 136, 255, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.neon-logo-img {
+    height: 40px;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.7));
+    transition: filter 0.3s ease;
+}
+
+.neon-logo-img:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.9));
+}
+
+/* Neon Navigation */
+.neon-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.neon-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.neon-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0ff;
+    transition: width 0.3s ease;
+}
+
+.neon-link:hover {
+    color: #0ff;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.neon-link:hover::after {
+    width: 100%;
+}
+
+.neon-link.active {
+    color: #0ff;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+}
+
+.neon-link.active::after {
+    width: 100%;
+}
+
+/* Neon Hamburger Menu */
+.neon-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.menu-icon {
+    filter: drop-shadow(0 0 3px rgba(0, 255, 255, 0.7));
+    transition: filter 0.3s ease;
+}
+
+.menu-icon:hover {
+    filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.9));
+}
+
+/* Neon Search Box */
+.neon-search-box {
+    display: flex;
+    margin: 40px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.neon-input {
+    flex: 1;
+    padding: 12px 20px;
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid #08f;
+    border-radius: 30px 0 0 30px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 136, 255, 0.3);
+}
+
+.neon-input:focus {
+    border-color: #0ff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.neon-search-btn {
+    background: #08f;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.neon-search-btn:hover {
+    background: #0ff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.search-icon {
+    vertical-align: middle;
+}
+
+/* Neon Blog Grid */
+.neon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.neon-blog-card {
+    background: rgba(20, 20, 20, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 136, 255, 0.3);
+}
+
+.neon-blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 136, 255, 0.4);
+    border-color: #0ff;
+}
+
+.blog-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.blog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.neon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 10, 20, 0.8), transparent);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.neon-blog-card:hover .blog-image {
+    transform: scale(1.05);
+}
+
+.neon-blog-card:hover .neon-overlay {
+    opacity: 0.5;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content time {
+    color: #08f;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.blog-content h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    text-shadow: 0 0 5px rgba(0, 136, 255, 0.3);
+}
+
+.blog-content p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.neon-read-more {
+    color: #0ff;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.neon-read-more i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.neon-blog-card:hover .neon-read-more {
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.neon-blog-card:hover .neon-read-more i {
+    transform: translateX(5px);
+}
+
+/* Neon Footer */
+.neon-footer {
+    background: rgba(10, 10, 20, 0.9);
+    border-top: 1px solid #08f;
+    padding: 50px 0 30px;
+    margin-top: 80px;
+    box-shadow: 0 -5px 15px rgba(0, 136, 255, 0.2);
+}
+
+.neon-contact-box {
+    background: rgba(0, 20, 40, 0.6);
+    border: 1px solid #08f;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0, 136, 255, 0.2);
+}
+
+.neon-contact-box h3 {
+    color: #0ff;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-link i {
+    width: 20px;
+    text-align: center;
+    color: #08f;
+}
+
+.contact-link:hover {
+    color: #0ff;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+.contact-link:hover i {
+    color: #0ff;
+}
+
+.neon-copyright {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .neon-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: rgba(10, 10, 20, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        border-left: 1px solid #08f;
+        box-shadow: -5px 0 15px rgba(0, 136, 255, 0.3);
+    }
+
+    .neon-menu.active {
+        right: 0;
+    }
+
+    .neon-hamburger {
+        display: block;
+    }
+
+    .neon-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .neon-search-box {
+        margin: 30px 0;
+    }
+  }
