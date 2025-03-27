@@ -1,0 +1,214 @@
+/* pray-request.css - Prayer Request Page Styling */
+
+.prayer-container {
+    padding: 3rem 0;
+}
+
+.prayer-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.prayer-header h1 {
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.verse-box {
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid var(--accent);
+    padding: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.verse-box i {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.verse-box p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.verse-ref {
+    font-weight: 600;
+    text-align: right;
+}
+
+.prayer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.prayer-intro {
+    margin-bottom: 3rem;
+}
+
+.prayer-promise {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.prayer-promise i {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.prayer-promise h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.prayer-form {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.prayer-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.prayer-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.prayer-form input,
+.prayer-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.prayer-form textarea {
+    min-height: 200px;
+}
+
+.required {
+    color: var(--secondary);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.human-check {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.human-check input {
+    margin-right: 10px;
+}
+
+.btn-prayer {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.btn-prayer:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.btn-prayer i {
+    margin-right: 10px;
+}
+
+.prayer-faq {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.prayer-faq h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.prayer-faq i {
+    margin-right: 10px;
+    color: var(--accent);
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.faq-question {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.faq-question::before {
+    content: "+";
+    margin-right: 10px;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.faq-answer {
+    color: var(--gray);
+    padding-left: 1.5rem;
+    display: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question::before {
+    content: "-";
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .prayer-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .prayer-promise {
+        padding: 1.5rem;
+    }
+  }
