@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Refer your biblical content to be featured on Biblical Mindset Therapy">
-    <meta property="og:image" content="https://yabeshgotame.github.io/-BIBLICAL-MINDSET-/images/og-refer.png">
     <title>Refer Content | Biblical Mindset Therapy</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css"> <!-- Additional styling -->
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header (Identical across all pages) -->
+    <!-- Header -->
     <header>
         <div class="menu-toggle" id="menuToggle">
             <span></span>
@@ -23,81 +20,98 @@
         <img src="images/search-icon.png" alt="Search" class="search-icon" id="searchIcon">
     </header>
 
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar" id="sidebar">
-        <span class="sidebar-close" id="sidebarClose">&times;</span>
-        <ul class="sidebar-menu">
-            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            <li><a href="learn.html"><i class="fas fa-book-open"></i> Learn</a></li>
-            <li><a href="refer.html"><i class="fas fa-share-alt"></i> Refer</a></li>
-            <li><a href="pray-request.html"><i class="fas fa-praying-hands"></i> Pray</a></li>
-        </ul>
-    </nav>
-
-    <!-- Search Modal -->
-    <div class="search-modal" id="searchModal">
-        <div class="search-container">
-            <input type="text" placeholder="Search teachings..." id="searchInput">
-            <button id="searchButton"><i class="fas fa-search"></i> Search</button>
-            <span class="close-search">&times;</span>
-        </div>
-    </div>
-
-    <!-- Main Content -->
     <main class="refer-container">
         <div class="container">
-            <h1 class="page-title">Refer Your Content</h1>
+            <div class="refer-header">
+                <h1>Contribute Your Insights</h1>
+                <div class="verse-box">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Let the word of Christ dwell in you richly as you teach and admonish one another with all wisdom."</p>
+                    <p class="verse-ref">Colossians 3:16</p>
+                </div>
+            </div>
+
             <div class="refer-content">
-                <div class="refer-text">
-                    <h2>Share Your Biblical Insights</h2>
-                    <p>We welcome submissions from our community! If you have written biblically sound content that aligns with our mission, you can refer it for potential publication.</p>
-                    
-                    <div class="benefits">
-                        <h3><i class="fas fa-check-circle"></i> Benefits of Referring Content:</h3>
-                        <ul>
-                            <li>Full credit with your name and bio</li>
-                            <li>Reach a wider Christian audience</li>
-                            <li>Contribute to spiritual growth</li>
-                            <li>Potential to become a regular contributor</li>
-                        </ul>
+                <!-- Guidelines Section -->
+                <section class="refer-card guidelines-card">
+                    <div class="card-header">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h2>Submission Guidelines</h2>
                     </div>
-                    
-                    <div class="guidelines">
-                        <h3><i class="fas fa-clipboard-check"></i> Submission Guidelines:</h3>
-                        <ol>
-                            <li>Content must be original and biblically accurate</li>
-                            <li>Minimum 800 words for articles</li>
-                            <li>Include Scripture references (NKJV preferred)</li>
-                            <li>No promotional or offensive content</li>
-                        </ol>
+                    <div class="guidelines-list">
+                        <div class="guideline-item">
+                            <div class="guideline-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="guideline-text">
+                                <h3>Biblical Alignment</h3>
+                                <p>Content must align with Scripture and orthodox Christian doctrine</p>
+                            </div>
+                        </div>
+                        <div class="guideline-item">
+                            <div class="guideline-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="guideline-text">
+                                <h3>Original Work</h3>
+                                <p>Submissions must be your own original content</p>
+                            </div>
+                        </div>
+                        <div class="guideline-item">
+                            <div class="guideline-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="guideline-text">
+                                <h3>Practical Focus</h3>
+                                <p>Teachings should help apply biblical truth to daily life</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="refer-action">
-                    <div class="action-card">
-                        <i class="fas fa-envelope-open-text"></i>
-                        <h3>Email Your Submission</h3>
-                        <p>Send your content directly to our editorial team for review.</p>
-                        <a href="mailto:gotameyabesh@gmail.com" class="btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Email
-                        </a>
+                </section>
+
+                <!-- Submission Section -->
+                <section class="refer-card submission-card">
+                    <div class="card-header">
+                        <i class="fas fa-paper-plane"></i>
+                        <h2>How to Submit</h2>
                     </div>
-                </div>
+                    <div class="submission-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Prepare Your Content</h3>
+                                <p>Write your article (800-1500 words) with Scripture references</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Include Your Details</h3>
+                                <p>Provide your name and brief bio (50 words max)</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Email for Review</h3>
+                                <p>Send to our editorial team for consideration</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="mailto:submissions@biblicalmindset.com" class="btn-primary">
+                        <i class="fas fa-envelope"></i> Send Submission
+                    </a>
+                </section>
             </div>
         </div>
     </main>
 
-    <!-- Footer (Identical across all pages) -->
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
                 <h3>BIBLICAL MINDSET</h3>
-                <p>Dream. Believe. Achieve through Christ.</p>
-                <div class="contact">
-                    <span><i class="fas fa-envelope"></i> info@biblicalmindset.com</span>
-                </div>
+                <p>Transforming minds through Scripture</p>
             </div>
             <div class="footer-section links">
                 <h4>QUICK LINKS</h4>
@@ -105,24 +119,21 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="learn.html">Teachings</a></li>
                 </ul>
             </div>
             <div class="footer-section social">
                 <h4>CONNECT</h4>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/mrryabesh" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/9764790342" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:gotameyabesh@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Biblical Mindset Therapy. All rights reserved.</p>
+            <p>&copy; 2025 Biblical Mindset Therapy</p>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/search.js"></script>
 </body>
 </html>
